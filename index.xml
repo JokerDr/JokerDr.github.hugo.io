@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site</title>
-    <link>https://github.com/JokerDr/JokerDr.github.io/</link>
+    <link>https://JokerDr.github.io/</link>
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017. All rights reserved.</copyright>
     <lastBuildDate>Thu, 04 Jan 2018 17:58:16 +0800</lastBuildDate>
     
-	<atom:link href="https://github.com/JokerDr/JokerDr.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://JokerDr.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://github.com/JokerDr/JokerDr.github.io/about/</link>
+      <link>https://JokerDr.github.io/about/</link>
       <pubDate>Thu, 04 Jan 2018 17:58:16 +0800</pubDate>
       
-      <guid>https://github.com/JokerDr/JokerDr.github.io/about/</guid>
+      <guid>https://JokerDr.github.io/about/</guid>
       <description>hello world</description>
     </item>
     
