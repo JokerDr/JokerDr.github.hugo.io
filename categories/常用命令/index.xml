@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>常用命令 on 青龙偃月的博客</title>
-    <link>http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+    <link>http://blog.yuanqinglong.cn/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
     <description>Recent content in 常用命令 on 青龙偃月的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 22 Jan 2018 20:49:29 +0800</lastBuildDate>
     
-	<atom:link href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yuanqinglong.cn/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Markdown常用语法</title>
-      <link>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 22 Jan 2018 20:49:29 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;写博客，自然免不了接触&lt;strong&gt;Markdown&lt;/strong&gt;,作为初学者，为了即用即查，我决定把相关命令记录下来，本文就是边学边写
 此处声明：本文是 &lt;strong&gt;参考他人的文章&lt;/strong&gt;&amp;amp;&lt;strong&gt;结合实践&lt;/strong&gt;后，所写，另外，转载、复制随意，但请务必&lt;strong&gt;注明本文链接&lt;/strong&gt;&lt;/p&gt;
@@ -45,10 +45,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>http://www.flysnow.org/post/2018/hello-world/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/hello-world/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/hello-world/</guid>
       <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot;  More info: Writing
 Run server $ hexo server  More info: Server
 Generate static files $ hexo generate  More info: Generating</description>

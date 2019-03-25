@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>字符串位置 on 青龙偃月的博客</title>
-    <link>http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/</link>
+    <link>http://blog.yuanqinglong.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/</link>
     <description>Recent content in 字符串位置 on 青龙偃月的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 13 Mar 2018 22:12:38 +0800</lastBuildDate>
     
-	<atom:link href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yuanqinglong.cn/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>charAt与 indexOf与lastIndexOf </title>
-      <link>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</link>
       <pubDate>Tue, 13 Mar 2018 22:12:38 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
 &lt;/blockquote&gt;

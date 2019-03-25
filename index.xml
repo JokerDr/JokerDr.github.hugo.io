@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>青龙偃月的博客</title>
-    <link>http://www.flysnow.org/</link>
+    <link>http://blog.yuanqinglong.cn/</link>
     <description>Recent content on 青龙偃月的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 23 Mar 2019 21:05:59 +0800</lastBuildDate>
     
-	<atom:link href="http://www.flysnow.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.yuanqinglong.cn/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>毕业设计的二三事——开发环境搭建篇（后端）</title>
-      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</link>
+      <link>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</link>
       <pubDate>Sat, 23 Mar 2019 21:05:59 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;不是教程~， 单纯的对后端开发环境的选用以及配置过程的问题进行总结&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -42,10 +42,10 @@
     
     <item>
       <title>毕业设计的二三事——开发环境搭建篇（前端）</title>
-      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
+      <link>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Sat, 23 Mar 2019 17:30:34 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本篇主要说明&lt;strong&gt;前端开发环境的选择&lt;/strong&gt;&amp;amp;&amp;amp;&lt;strong&gt;搭建过程中遇到的问题&lt;/strong&gt;&amp;amp;&amp;amp;&lt;strong&gt;相应的解决思路&lt;/strong&gt;，我并不会给出具体的解决方案，我会给出思路，因为方案其实不是很重要，解决问题的方向才是最重要的，这个过程中我踩了很多的坑~&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -86,10 +86,10 @@
     
     <item>
       <title>毕业设计的二三事——项目相关</title>
-      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
+      <link>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
       <pubDate>Sat, 23 Mar 2019 10:21:05 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;临近毕业，毕设是做个xxx的管理系统，分析完需求后，思来想去还是觉得应该好好地做一下2333~，当然由于经验问题，接下来本系列的一切由我的个人实习经历+实际经历+网络资料调研结合而成，简单的写一写，不成熟的地方多多指教，请到我github的文章下留言~&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -113,19 +113,19 @@
     
     <item>
       <title>设备像素比简介</title>
-      <link>http://www.flysnow.org/drafts/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/</link>
+      <link>http://blog.yuanqinglong.cn/drafts/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Wed, 21 Nov 2018 13:50:57 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/drafts/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/</guid>
+      <guid>http://blog.yuanqinglong.cn/drafts/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>chrome开发者工具面板功能解析</title>
-      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link>
       <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本文大部分资料来源于互联网博客分享以及自身日常使用&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -138,19 +138,19 @@
     
     <item>
       <title>关于webpack4配置错误的记录</title>
-      <link>http://www.flysnow.org/drafts/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
+      <link>http://blog.yuanqinglong.cn/drafts/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/drafts/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://blog.yuanqinglong.cn/drafts/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
       <description> 错误（一） `webpack.optimize.CommonsChunkPlugin has been removed, , please use config.optimization.splitChunks instead.` - 正如其所述， `webpack.optimize.CommonsChunkPlugin`在webpck4版本已经移除了，新版本插件的使用方法([gm的地址](https://webpack.js.org/plugins/split-chunks-plugin/ &amp;quot;split-chunks-plugin&amp;quot;)是用与entry，plugins等属性同级别的optimization，其下有一个splitChunks属性来代替； - 之前的解决方案： - ```bash new webpack.optimize.CommonsChunkPlugin({ //将类库单独存放 //name对应入口名 name: [&#39;jquery&#39;, &#39;vue&#39;], //把文件打包到哪里，路径 filename: &#39;assets/js/[name].js&#39;, //最小文件数 minChunks: 2 }), ``` - 现在的解决方案： - ```bash ```  </description>
     </item>
     
     <item>
       <title>关于webpack4配置错误的记录</title>
-      <link>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
       <description>&lt;h2 id=&#34;错误-一&#34;&gt;错误（一）&lt;/h2&gt;
 
 &lt;p&gt;&lt;code&gt;webpack.optimize.CommonsChunkPlugin has been removed, , please use config.optimization.splitChunks instead.&lt;/code&gt;
@@ -159,29 +159,29 @@
     
     <item>
       <title>chrome开发者工具Fidder请求信息颜色的含义</title>
-      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</link>
       <pubDate>Sun, 18 Nov 2018 18:35:43 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
       <description> 日常记录
  图片示例： 颜色 | 含义 -------- | --- 红色 | HTTP状态错误 黄色 | HTTP状态需要用户认证 灰色 | 数据流类型CONNECT 或者相应内容是图片 紫色 | 响应内容是css文件 蓝色 | 响应内容是HTML文件 绿色 | 相应内容是javascript文件  </description>
     </item>
     
     <item>
       <title>DOMContentLoad 与 Load 区别</title>
-      <link>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Sat, 17 Nov 2018 14:35:26 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</guid>
       <description>前言 关于DOMContentLoad？直白的说，就是DOM内容加载完毕。那么 - 1.什么时候dom加载完毕？ 当html解析完毕形成DOM树 下面是浏览器解析的快照： 没有脚本时，浏览器解析完DOM会立即触发DOMContentLoad；如果包含脚本，且非异步的情况下，由于js是单线程，脚本的加载往往会阻塞DOM的解析，而脚本往往需要等位于脚本前的css文件执行完毕才能执行，任何情况下，DOMContentLoad不需要等待图片等其他资源的加载完成。 关于Load，页面上的所有资源（音频、视频、图片等），被夹在后才会触发Load事件，也就是说，二者事件的触发顺序是DOMContentLoad &amp;gt; Load</description>
     </item>
     
     <item>
       <title>深拷贝的实现</title>
-      <link>http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
       <pubDate>Sun, 28 Oct 2018 15:49:24 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;好久没有更新了，一些个人原因，&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -193,10 +193,10 @@
     
     <item>
       <title>mongo.exe启动后报错</title>
-      <link>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</link>
       <pubDate>Tue, 26 Jun 2018 21:10:58 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</guid>
       <description>&lt;h3 id=&#34;mongodb的使用报错信息&#34;&gt;MongoDB的使用报错信息&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    Server has startup warnings:
@@ -220,10 +220,10 @@
     
     <item>
       <title>MongoDB帮助文档</title>
-      <link>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
       <pubDate>Tue, 26 Jun 2018 21:00:57 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
       <description>&lt;h3 id=&#34;db的帮助文档&#34;&gt;db的帮助文档&lt;/h3&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    db.help();
@@ -234,10 +234,10 @@
     
     <item>
       <title>关于Win10安装MongoDB报错</title>
-      <link>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</link>
       <pubDate>Tue, 26 Jun 2018 19:38:17 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;学校让留了一个爬虫任务，于是在我尝试着安装MongoDB时，遇到了这样的问题&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -251,10 +251,10 @@
     
     <item>
       <title> HTML(5) 样式指南和代码约定</title>
-      <link>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</link>
       <pubDate>Sat, 19 May 2018 19:43:13 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;本篇内容转载自w3c
 良好且优秀的代码习惯是必要的，无论是开发成本上，还是从赏心悦目的程度上&lt;/p&gt;
@@ -277,10 +277,10 @@
     
     <item>
       <title> 前端提交数据的那些方式</title>
-      <link>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</link>
       <pubDate>Fri, 18 May 2018 21:40:11 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;声明：本篇文章转自&lt;a href=&#34;https://blog.csdn.net/dancen/article/details/37572101，&#34;&gt;https://blog.csdn.net/dancen/article/details/37572101，&lt;/a&gt;
 相比其他浅显的文章，这篇更让我收获颇多，
@@ -306,29 +306,29 @@
     
     <item>
       <title> 关于 Restful 接口的二三事</title>
-      <link>http://www.flysnow.org/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
       <pubDate>Fri, 18 May 2018 10:13:58 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
       <description>&lt;p&gt;互联网的发展是是迅速的，然而，这也就意味着，在纷繁复杂的环境下，前后端要想更加有效率的配合，免不了需要一种成熟的API设计理念，如：&lt;code&gt;RESTful&lt;/code&gt; API
 关于restful接口的设计，近期看了一些博文，在这里谈一下收获&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>算法基础———插入排序 </title>
-      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Mon, 07 May 2018 22:18:31 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</guid>
       <description>概念  在归并排序中，我们是用一种被称为分治法的通用模式，在分治法中，我们即将原问题分解为类似原问题的子问题，并递归的求解这些子问题，然后再归并这些子问题的解。  复杂度  时间复杂度 对于所有情况，它仅有一个O(nlgn) 空间复杂度O（n）  原址  非原址  js程序代码 bash function insertionSort(array) { console.time(&#39;插入排序耗时：&#39;); for (var i = 1; i &amp;lt; array.length; i++) { var key = array[i]; var j = i - 1; while ( array[j] &amp;gt; key) { array[j + 1] = array[j]; j--; } array[j + 1] = key; } console.timeEnd(&#39;插入排序耗时：&#39;); return array; } var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48]; console.log(insertionSort(arr));  &amp;ndash;&amp;gt;</description>
     </item>
     
     <item>
       <title>算法基础———选择排序 </title>
-      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
       <pubDate>Sat, 05 May 2018 23:08:58 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;日积跬步，以期千里。
 《算法基础·打开算法之门》小札&lt;/p&gt;
@@ -345,10 +345,10 @@
     
     <item>
       <title>算法基础之二分查找 </title>
-      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</link>
       <pubDate>Fri, 04 May 2018 21:24:14 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;最近在看《算法基础·打开算法之门》（毕竟程序猿的算法不能太差&amp;hellip;）
 人总是健忘的，所以我决定将我收获的东西记录下来
@@ -367,10 +367,10 @@
     
     <item>
       <title>解决输入框长度maxLength的兼容性问题</title>
-      <link>http://www.flysnow.org/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 11 Apr 2018 20:18:30 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;最近在忙着做些东西，差点荒废了我的博客，随便写点什么吧&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -380,10 +380,10 @@
     
     <item>
       <title>改变浏览器位置</title>
-      <link>http://www.flysnow.org/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</link>
       <pubDate>Tue, 20 Mar 2018 21:45:40 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -400,10 +400,10 @@
     
     <item>
       <title>找到数组的最值 </title>
-      <link>http://www.flysnow.org/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</link>
       <pubDate>Thu, 15 Mar 2018 22:20:42 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -418,10 +418,10 @@
     
     <item>
       <title>charAt与 indexOf与lastIndexOf </title>
-      <link>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</link>
       <pubDate>Tue, 13 Mar 2018 22:12:38 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -433,10 +433,10 @@
     
     <item>
       <title>关于 ‘ &#43; ’ 与 new Date</title>
-      <link>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</link>
       <pubDate>Fri, 09 Mar 2018 21:35:49 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;在读《javascript高级程序设计（第三版）》时，遇到的一行代码
 &lt;code&gt;var start = +new Date()&lt;/code&gt;;
@@ -450,10 +450,10 @@
     
     <item>
       <title>关于ajax，大概需要了解哪些基础性的东西？</title>
-      <link>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
       <pubDate>Sat, 03 Mar 2018 21:43:07 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;人总是健忘的，那么为什么不多动动手呢？比如说把知识记下来。
 我们总会或有或无的接触ajax技术，那么作为一名学习者，就有必要了解相关的知识&lt;/p&gt;
@@ -468,10 +468,10 @@
     
     <item>
       <title>对CommonJS规范的一些理解</title>
-      <link>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
       <pubDate>Wed, 28 Feb 2018 19:03:21 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;咸鱼了一个寒假，不能再这样了。。。
 学海无涯啊0.0&lt;/p&gt;
@@ -502,10 +502,10 @@
     
     <item>
       <title>关于object.key与object[key]的区别</title>
-      <link>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
       <pubDate>Wed, 24 Jan 2018 15:01:27 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
       <description>  记录所需要的，摒弃多余的。 本篇文章是对segmentfault的一个问答的总结。
  obeject.key与object[key]有什么区别? 有什么区别，不试试怎么知道？
 测试代码（其实有很多栗子，随便举一个） var obj = { name: &#39;tom&#39;, age: 22 }, someKey = &#39;age&#39;; console.log(obj.name); console.log(obj[&#39;name&#39;]); console.log(obj.someKey); console.log(obj[someKey]);  测试结果： （放图） 通常来讲， obj[&amp;ldquo;key&amp;rdquo;] 与 obj.key 的作用差不多，但是，  如果key不确定（key是变量）的情况下， 或者key的写法比较特殊（比如包含空格什么的）  则只能通过obj[ ]的方式去访问 </description>
@@ -513,10 +513,10 @@
     
     <item>
       <title>Markdown常用语法</title>
-      <link>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</link>
       <pubDate>Mon, 22 Jan 2018 20:49:29 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;写博客，自然免不了接触&lt;strong&gt;Markdown&lt;/strong&gt;,作为初学者，为了即用即查，我决定把相关命令记录下来，本文就是边学边写
 此处声明：本文是 &lt;strong&gt;参考他人的文章&lt;/strong&gt;&amp;amp;&lt;strong&gt;结合实践&lt;/strong&gt;后，所写，另外，转载、复制随意，但请务必&lt;strong&gt;注明本文链接&lt;/strong&gt;&lt;/p&gt;
@@ -545,10 +545,10 @@
     
     <item>
       <title>原生JS实现jQuery的addClass, removeClass, hasClass函数功能</title>
-      <link>http://www.flysnow.org/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</link>
       <pubDate>Sat, 20 Jan 2018 23:21:08 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</guid>
       <description>&lt;h4 id=&#34;1-addclass&#34;&gt;- [1] addClass&lt;/h4&gt;
 
 &lt;hr /&gt;
@@ -564,10 +564,10 @@
     
     <item>
       <title>css解决背景透明的兼容性问题</title>
-      <link>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 19 Jan 2018 09:33:33 +0800</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h3 id=&#34;全浏览器兼容背景半透明的问题的么几个解决方案&#34;&gt;全浏览器兼容背景半透明的问题的么几个解决方案：&lt;/h3&gt;
 
 &lt;h5 id=&#34;1-使用半透明png图片平铺&#34;&gt;1.使用半透明png图片平铺&lt;/h5&gt;
@@ -579,10 +579,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>http://www.flysnow.org/post/2018/hello-world/</link>
+      <link>http://blog.yuanqinglong.cn/post/2018/hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/post/2018/hello-world/</guid>
+      <guid>http://blog.yuanqinglong.cn/post/2018/hello-world/</guid>
       <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot;  More info: Writing
 Run server $ hexo server  More info: Server
 Generate static files $ hexo generate  More info: Generating</description>
@@ -590,28 +590,28 @@ Generate static files $ hexo generate  More info: Generating</description>
     
     <item>
       <title>关于</title>
-      <link>http://www.flysnow.org/about/</link>
+      <link>http://blog.yuanqinglong.cn/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/about/</guid>
+      <guid>http://blog.yuanqinglong.cn/about/</guid>
       <description></description>
     </item>
     
     <item>
       <title>咸鱼杂谈</title>
-      <link>http://www.flysnow.org/others/</link>
+      <link>http://blog.yuanqinglong.cn/others/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/others/</guid>
+      <guid>http://blog.yuanqinglong.cn/others/</guid>
       <description></description>
     </item>
     
     <item>
       <title>归档</title>
-      <link>http://www.flysnow.org/archives/</link>
+      <link>http://blog.yuanqinglong.cn/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://www.flysnow.org/archives/</guid>
+      <guid>http://blog.yuanqinglong.cn/archives/</guid>
       <description></description>
     </item>
     
