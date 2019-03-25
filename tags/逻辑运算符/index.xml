@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>逻辑运算符 on 青龙偃月的博客</title>
-    <link>http://blog.yuanqinglong.cn/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
+    <link>https://JokerDr.github.io/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/</link>
     <description>Recent content in 逻辑运算符 on 青龙偃月的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 09 Mar 2018 21:35:49 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.yuanqinglong.cn/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://JokerDr.github.io/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于 ‘ &#43; ’ 与 new Date</title>
-      <link>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</link>
+      <link>https://JokerDr.github.io/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</link>
       <pubDate>Fri, 09 Mar 2018 21:35:49 +0800</pubDate>
       
-      <guid>http://blog.yuanqinglong.cn/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</guid>
+      <guid>https://JokerDr.github.io/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;在读《javascript高级程序设计（第三版）》时，遇到的一行代码
 &lt;code&gt;var start = +new Date()&lt;/code&gt;;

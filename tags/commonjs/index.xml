@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Commonjs on 青龙偃月的博客</title>
-    <link>http://blog.yuanqinglong.cn/tags/commonjs/</link>
+    <link>https://JokerDr.github.io/tags/commonjs/</link>
     <description>Recent content in Commonjs on 青龙偃月的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 28 Feb 2018 19:03:21 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.yuanqinglong.cn/tags/commonjs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://JokerDr.github.io/tags/commonjs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>对CommonJS规范的一些理解</title>
-      <link>http://blog.yuanqinglong.cn/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
+      <link>https://JokerDr.github.io/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
       <pubDate>Wed, 28 Feb 2018 19:03:21 +0800</pubDate>
       
-      <guid>http://blog.yuanqinglong.cn/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
+      <guid>https://JokerDr.github.io/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;咸鱼了一个寒假，不能再这样了。。。
 学海无涯啊0.0&lt;/p&gt;
