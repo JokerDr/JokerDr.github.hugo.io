@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> 前端提交数据的那些方式 | 青龙偃月的博客</title>
+    <meta property="og:title" content=" 前端提交数据的那些方式 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-05-18T21:40:11&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-05-18T21:40:11&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content=" 前端提交数据的那些方式">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title"> 前端提交数据的那些方式</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年5月18日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/http">HTTP</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <blockquote>
+<p>声明：本篇文章转自<a href="https://blog.csdn.net/dancen/article/details/37572101，">https://blog.csdn.net/dancen/article/details/37572101，</a>
+相比其他浅显的文章，这篇更让我收获颇多，
+另外，文章已略作修改，更易于自己理解
+文章待完善</p>
+</blockquote>
+
+<p>Http定义了与服务器交互的不同方法，最基本的方法有很多种，今天要说的分别是<code>GET</code>，<code>POST</code>，<code>PUT</code>，<code>DELETE</code>。<br/>
+另外，关于<code>URL</code>：</p>
+
+<ul>
+<li>Uniform Resource Location 全称是资源定位符 (暂时不做和URI的区分)</li>
+<li>用于请求获取具体路径上的资源</li>
+</ul>
+
+<p>HTTP中的<code>GET</code>，<code>POST</code>，<code>PUT</code>，<code>DELETE</code>，对应的资源操作是————查，改，增，删。<br/></p>
+
+<ul>
+<li><code>GET</code>一般用于获取/查询资源信息，</li>
+<li><code>POST</code>一般用于更新资源信息。</li>
+</ul>
+
+<h4 id="根据http规范-get-用于信息获取-而且应该是安全的和幂等的">根据HTTP规范，GET 用于信息获取，而且应该是安全的和幂等的。</h4>
+
+<ul>
+<li>1)所谓安全的意味着该操作用于获取信息而非修改信息。换句话说，<code>GET</code> 请求一般不应产生副作用。就是说，它仅仅是获取资源信息，就像数据库查询一样，不会修改，增加数据，不会影响资源的状态。<br/></li>
+<li>注意：这里安全的含义仅仅是指是非修改信息。</li>
+<li>2)幂等，意味着对同一 <code>URL</code> 的多个请求应该返回同样的结果。
+
+<ul>
+<li>A. 概念：幂等（idempotent、idempotence)是一个数学或计算机学概念，常见于抽象代数中。</li>
+<li>B. 幂等有一下几种定义：
+-i. 对于单目运算，如果一个运算对于在范围内的所有的一个数多次进行该运算所得的结果和进行一次该运算所得的结果是一样的，那么我们就称该运算是幂等的。比如绝对值运算就是一个例子，在实数集中，有<code>abs(a)=abs(abs(a))</code>。
+-ii. 对于双目运算，则要求当参与运算的两个值是等值的情况下，如果满足运算结果与参与运算的两个值相等，则称该运算幂等，如求两个数的最大值的函数，有在在实数集中幂等，即max(x,x) = x。</li>
+<li>C. 看完上述解释后，应该可以理解<code>GET</code>幂等的含义了。</li>
+</ul></li>
+</ul>
+
+<p>但在实际应用中，以上2条规定并没有这么严格。引用别人文章的例子：比如，新闻站点的头版不断更新。虽然第二次请求会返回不同的一批新闻，该操作仍然被认为是安全的和幂等的，因为它总是返回最新的新闻。从根本上说，如果目标是当用户打开一个链接时，他可以确信从自身的角度来看没有改变资源即可。</p>
+
+<h4 id="根据http规范-post-表示可能修改变服务器上的资源的请求">根据HTTP规范，<code>POST</code>表示可能修改变服务器上的资源的请求。</h4>
+
+<ul>
+<li>继续引用上面的例子：还是新闻以网站为例，读者对新闻发表自己的评论应该通过<code>POST</code>实现，因为在评论提交后，我们已经将数据库里的数据项进行更新（插入了一天新的评论)操作，站点的资源已经不同了，或者说资源被修改了。</li>
+</ul>
+
+<p>上面大概说了一下HTTP规范中<code>GET</code>和<code>POST</code>的一些原理性的问题。但在实际的做的时候，很多人却没有按照HTTP规范去做，导致这个问题的原因有很多，<br/>比如说：</p>
+
+<ul>
+<li><p>1) 很多人贪方便，更新资源时用了<code>GET</code>，举个栗子来讲就是我们在跳转某个链接时可能需要附带相应参数才能跳转到相应的页面<a src="http://localhost:8080/test?name=lisi&age=12">(别试了，链接瞎写的，意思到了就行了)，而<code>POST</code>必须要到FORM（表单)，以及再上传文件时，我们必须表单里添加这样的属性<code>enctype = &quot;multipart/form-data&quot;</code>，相比知悉，简单与否，便知分晓。</p></li>
+
+<li><p>2)对资源的增，删，改，查操作，其实都可以通过<code>GET</code>/<code>POST</code>完成，不需要用到<code>PUT</code>和<code>DELETE</code>（尴尬的PUT,DELETE)。</p></li>
+
+<li><p>3)另外一个是，早期的Web MVC框架设计者们并没有有意识地将<code>URL</code>当作抽象的资源来看待和设计，所以导致一个比较严重的问题是传统的Web MVC框架基本上都只支持<code>GET</code>和<code>POST</code>两种HTTP方法，而不支持<code>PUT</code>和<code>DELETE</code>方法。</p>
+
+<ul>
+<li>A. 简单解释一下MVC：MVC本来是存在于Desktop程序中的，M是指数据模型，V是指用户界面，C则是控制器。使用MVC的目的是将M和V的实现代码分离，从而使同一个程序可以使用不同的表现形式。</li>
+</ul></li>
+</ul>
+
+<p>以上3点典型地描述了老一套的风格（没有严格遵守HTTP规范)，随着架构的发展，现在出现<code>REST</code>(Representational State Transfer)，一套支持HTTP规范的新风格，这里不多说了，可以参考《RESTful Web Services》。</p>
+
+<h4 id="说完原理性的问题-我们再从表面现像上面看看-get-和-post-的区别">说完原理性的问题，我们再从表面现像上面看看<code>GET</code>和<code>POST</code>的区别：</h4>
+
+<ul>
+<li><p>1) <code>GET</code>请求的数据会附在<code>URL</code>之后（就是把数据放置在HTTP协议头中)，以?分割<code>URL</code>和传输数据，参数之间以&amp;相连，如：login.action?name=hyddd&amp;password=idontknow&amp;verify=%E4%BD%A0%E5%A5%BD。如果数据是英文字母/数字，原样发送，如果是空格，转换为+，如果是中文/其他字符，则直接把字符串用BASE64加密，得出如：%E4%BD%A0%E5%A5%BD，其中％XX中的XX为该符号以16进制表示的ASCII。<br/><code>POST</code>把提交的数据则放置在是HTTP包的包体中。</p></li>
+
+<li><p>2) &ldquo;<code>GET</code>方式提交的数据最多只能是1024字节，理论上<code>POST</code>没有限制，可传较大量的数据，IIS4中最大为80KB，IIS5中为100KB&rdquo;？？！</p></li>
+</ul>
+
+<h4 id="其实这样说是错误的-不准确的">其实这样说是错误的，不准确的：</h4>
+
+<ul>
+<li><p>1) 首先是&rdquo;<code>GET</code>方式提交的数据最多只能是1024字节&rdquo;，因为<code>GET</code>是通过<code>URL</code>提交数据，那么<code>GET</code>可提交的数据量就跟<code>URL</code>的长度有直接关系了。而实际上，<code>URL</code>不存在参数上限的问题，HTTP协议规范没有对<code>URL</code>长度进行限制。这个限制是特定的浏览器及服务器对它的限制。IE对<code>URL</code>长度的限制是2083字节(2K+35)。对于其他浏览器，如Netscape、FireFox等，理论上没有长度限制，其限制取决于操作系统的支持。<br/>&gt;
+<strong>注意这是限制是整个<code>URL</code>长度，而不仅仅是你的参数值数据长度。</strong></p></li>
+
+<li><p>2) 理论上讲，<code>POST</code>是没有大小限制的，HTTP协议规范也没有进行大小限制，说“<code>POST</code>数据量存在80K/100K的大小限制”是不准确的，<code>POST</code>数据是没有限制的，起限制作用的是服务器的处理程序的处理能力。</p>
+
+<ul>
+<li>A.对于ASP程序，Request对象处理每个表单域时存在100K的数据长度限制。但如果使用<code>Request.BinaryRead</code>则没有这个限制。</li>
+<li>B.由这个延伸出去，对于IIS 6.0，微软出于安全考虑，加大了限制。我们还需要注意：
+
+<ul>
+<li>i.    IIS 6.0默认ASP <code>POST</code>数据量最大为200KB，每个表单域限制是100KB。</li>
+<li>ii.   IIS 6.0默认上传文件的最大大小是4MB。</li>
+<li>iii.  IIS 6.0默认最大请求头是16KB。</li>
+<li>iv.   IIS 6.0之前没有这些限制。</li>
+</ul></li>
+<li>所以上面的80K，100K可能只是默认值而已(注：关于IIS4和IIS5的参数，我还没有确认)，但肯定是可以自己设置的。由于每个版本的IIS对这些参数的默认值都不一样，具体请参考相关的IIS配置文档。</li>
+</ul></li>
+
+<li><p>3) 在ASP中，服务端获取<code>GET</code>请求参数用<code>Request.QueryString</code>，获取<code>POST</code>请求参数用<code>Request.Form</code>。在JSP中，用<code>request.getParameter(\&quot;XXXX\&quot;)</code>来获取，虽然jsp中也有<code>request.getQueryString()</code>方法，但使用起来比较麻烦，比如：传一个<code>test.jsp?name=hyddd&amp;password=hyddd</code>，用<code>request.getQueryString()</code>得到的是：<code>name=hyddd&amp;password=hyddd</code>。在PHP中，可以用<code>$_GET</code>和<code>$_POST</code>分别获取<code>GET</code>和<code>POST</code>中的数据，而<code>$_REQUEST</code>则可以获取<code>GET</code>和<code>POST</code>两种请求中的数据。值得注意的是，JSP中使用<code>request</code>和PHP中使用<code>$_REQUEST</code>都会有隐患。</p></li>
+
+<li><p>4) <code>POST</code>的安全性要比<code>GET</code>的安全性高。注意：这里所说的安全性和上面<code>GET</code>提到的“安全”不是同个概念。上面“安全”的含义仅仅是不作数据修改，而这里安全的含义是真正的Security的含义，比如：通过<code>GET</code>提交数据，用户名和密码将明文出现在<code>URL</code>上，因为:</p>
+
+<ul>
+<li>A. 登录页面有可能被浏览器缓存</li>
+<li>B. 其他人查看浏览器的历史纪录，那么别人就可以拿到你的账号和密码了，除此之外，使用<code>GET</code>提交数据还可能会造成Cross-Site Request Forgery(跨站请求伪造)攻击。</li>
+<li>
+总结一下，<code>Get</code>是向服务器发索取数据的一种请求，而<code>Post</code>是向服务器提交数据的一种请求，在FORM（表单)中，Method默认为&rdquo;<code>GET</code>&ldquo;<br/>
+实质上，<code>GET</code>和<code>POST</code>只是发送机制不同，并不是一个取一个发！</li>
+</ul></li>
+</ul>
+                        </div>
+
+                        
+
+
+                        
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F">请求方式</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

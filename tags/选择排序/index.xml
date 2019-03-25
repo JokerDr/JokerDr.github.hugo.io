@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>选择排序 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
+    <description>Recent content in 选择排序 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 05 May 2018 23:08:58 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>算法基础———选择排序 </title>
+      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sat, 05 May 2018 23:08:58 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;日积跬步，以期千里。
+《算法基础·打开算法之门》小札&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;首先声明&lt;code&gt;array[i]&lt;/code&gt;是目前所看到的子数组中最小的元素，然后扫描数组的剩余部分，每当发现一个有一个元素小于当前最小的元素时，我们就更新最小元素的索引&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

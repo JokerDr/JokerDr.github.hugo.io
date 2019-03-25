@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 26 Jun 2018 21:10:58 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mongo.exe启动后报错</title>
+      <link>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:58 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</guid>
+      <description>&lt;h3 id=&#34;mongodb的使用报错信息&#34;&gt;MongoDB的使用报错信息&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    Server has startup warnings:
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Start the server with --bind_ip &amp;lt;address&amp;gt; to specify which IP
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten]
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>MongoDB帮助文档</title>
+      <link>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Tue, 26 Jun 2018 21:00:57 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;h3 id=&#34;db的帮助文档&#34;&gt;db的帮助文档&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    db.help();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;输出&#34;&gt;输出:&lt;/h4&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Win10安装MongoDB报错</title>
+      <link>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Tue, 26 Jun 2018 19:38:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;学校让留了一个爬虫任务，于是在我尝试着安装MongoDB时，遇到了这样的问题&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;描述如下&#34;&gt;描述如下：&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;etup wizard ended prematurely because of an error.your system has not been modified.To. Install this program at a later time run setup wizard again.click finish button to exit the setup&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

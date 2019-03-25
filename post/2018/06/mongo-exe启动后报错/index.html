@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>mongo.exe启动后报错 | 青龙偃月的博客</title>
+    <meta property="og:title" content="mongo.exe启动后报错 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-06-26T21:10:58&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-06-26T21:10:58&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="mongo.exe启动后报错">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">mongo.exe启动后报错</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年6月26日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <h3 id="mongodb的使用报错信息">MongoDB的使用报错信息</h3>
+
+<pre><code class="language-bash">    Server has startup warnings:
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Start the server with --bind_ip &lt;address&gt; to specify which IP
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten]
+</code></pre>
+
+<h3 id="解决方案">解决方案</h3>
+
+<p>sorry,我也不知道怎么回事，最后我决定重新建立数据库，下面是步骤：
+（MongoDB下载完成之后最好是配个环境变量，所以我是随便打开了一个cmd，或者powershell就可以运行mongod.exe/mongo.exe）</p>
+
+<h4 id="方案">方案:</h4>
+
+<ol>
+<li><p>准备工作</p>
+
+<ul>
+<li>首先，我们要在我们指定的路径新建数据库，如：<code>F:\MongoDb_data\db</code></li>
+<li>其次，新建一个保存日志的文件夹,如：<code>F:\MongoDb_data\log</code></li>
+<li>继而，再建一个配置文件，<code>mongo.config</code>
+内容如图：
+<img src="./mongo-exe启动后报错/05.png" alt="Alt text" title="配置" /></li>
+</ul></li>
+
+<li><p>执行配置文件，命令：<code>mongod --config &quot;F:\MongoDb_data\mongod.config&quot; --install</code>,我们能够看到log下生成了日志文件</p></li>
+
+<li><p>这一步不要去执行exe文件，如果这样的或或得到这样的报错信息
+<img src="./mongo-exe启动后报错/06.png" alt="Alt text" title="error" /></p>
+
+<p>原因很简单，因为我们的mongodb服务尚未启动，所以，运行命令<code>net start mongo</code>,即，开启MongoDB服务（<code>net stop mongo</code>关闭服务）
+然后再次执行 mongo.exe
+得到如下结果：
+<img src="./mongo-exe启动后报错/07.png" alt="Alt text" title="success" /></p></li>
+
+<li><p>然后我们可一查看数据库,<code>show dbs</code>，</p></li>
+
+<li><p>可以随便选择一个 ,比如，admin 数据库，命令<code>use admin</code></p></li>
+
+<li><p>添加一个用户，这里有些需要注意的地方：
+1) 首先我们需要了解的,创建用户的语句：</p>
+
+<pre><code>```bash
+    db.createUser(user, writeConcern)
+```
+</code></pre>
+
+<ul>
+<li>user            这个文档创建关于用户的身份认证和访问信息；</li>
+<li>writeConcern    这个文档描述保证MongoDB提供写操作的成功报告。</li>
+</ul>
+
+<p>2) 接下来细说 user:</p>
+
+<pre><code>```bash
+    {
+        user: &quot;&lt;name&gt;&quot;,  //用户名
+        pwd: &quot;&lt;cleartext password&gt;&quot;,  //密码
+        customData: { &lt;any information&gt; },   //关于此用户的描述
+        roles: [  
+            { role: &quot;&lt;role&gt;&quot;, db: &quot;&lt;database&gt;&quot; } | &quot;&lt;role&gt;&quot;,  //role:角色    db:指定数据库
+        ]  
+    }  
+```
+</code></pre>
+
+<ul>
+<li><p>user文档字段介绍：
+user字段，为新用户的名字；
+pwd字段，用户的密码；
+cusomData字段，为任意内容，例如可以为用户全名介绍；
+roles字段，指定用户的角色，可以用一个空数组给新用户设定空角色；
+在roles字段,可以指定内置角色和用户定义的角色。</p>
+
+<p>Built-In Roles（内置角色）：</p>
+
+<ol>
+<li>数据库用户角色：read、readWrite;</li>
+<li>数据库管理角色：dbAdmin、dbOwner、userAdmin；</li>
+<li>集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager；</li>
+<li>备份恢复角色：backup、restore；</li>
+<li>所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase</li>
+<li>超级用户角色：root<br />
+// 这里还有几个角色间接或直接提供了系统超级用户的访问（dbOwner 、userAdmin、userAdminAnyDatabase）</li>
+<li>内部角色：__system
+PS：关于每个角色所拥有的操作权限可以点击上面的内置角色链接查看详情。</li>
+</ol>
+
+<p>· writeConcern文档（<a href="https://docs.mongodb.com/manual/reference/write-concern/" title="官方">官方</a>
+    w选项：允许的值分别是 1、0、大于1的值、&rdquo;majority&rdquo;、<tag set>；
+    j选项：确保mongod实例写数据到磁盘上的journal（日志），这可以确保mongd以外关闭不会丢失数据。设置true启用。
+    wtimeout：指定一个时间限制,以毫秒为单位。wtimeout只适用于w值大于1。</p></li>
+</ul>
+
+<p>1) 完整执行步骤</p>
+
+<pre><code>```bash
+    use '&lt;database&gt;' //选择指定的数据库
+    db.createUser(user)
+```
+</code></pre>
+
+<ul>
+<li>以名为<code>admin</code>的数据库为例，在<code>mongo.exe</code>中执行如下:
+1) 创建管理员
+<code>bash
+ use admin
+</code></li>
+</ul>
+
+<p><img src="./mongo-exe启动后报错/01 .png" alt="Alt text" title="use admin" /></p>
+
+<p>2) 创建管理员</p>
+
+<pre><code class="language-bash">     db.createUser(
+        {
+            user: &quot;yuanqinglong&quot;,
+            pwd: &quot;yql&quot;,
+            roles: [{role: &quot;userAdminAnyDatabase&quot;, db: &quot;admin&quot;}]
+        }
+    )
+</code></pre>
+
+<p><img src="./mongo-exe启动后报错/02.png &quot;db.createUser(" alt="Alt text" />&rdquo;)</p>
+
+<p>3)  以用户身份登录</p>
+
+<pre><code class="language-bash">    mongo --port 27017 -u &quot;yuanqinglong&quot; -p &quot;yql&quot; --authenticationDatabase &quot;admin&quot;
+</code></pre>
+
+<p>或者直接用<code>mongo.exe</code>启动也可以
+（端口默认就是27017可以不指定）
+结果:
+<img src="./mongo-exe启动后报错/03.png" alt="Alt text" title="重启MongoDB服务器" /></p></li>
+</ol>
+
+<p>ok！！！</p>
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">MongoDB帮助文档</a></li>
+        
+        <li><a href="/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/">关于Win10安装MongoDB报错</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/mongodb">MongoDB</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

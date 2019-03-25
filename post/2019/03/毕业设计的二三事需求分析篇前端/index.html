@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>毕业设计的二三事——项目相关 | 青龙偃月的博客</title>
+    <meta property="og:title" content="毕业设计的二三事——项目相关 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2019-03-23T10:21:05&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2019-03-23T10:21:05&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="毕业设计的二三事——项目相关">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">毕业设计的二三事——项目相关</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2019年3月23日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1">毕业设计</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <blockquote>
+<p>临近毕业，毕设是做个xxx的管理系统，分析完需求后，思来想去还是觉得应该好好地做一下2333~，当然由于经验问题，接下来本系列的一切由我的个人实习经历+实际经历+网络资料调研结合而成，简单的写一写，不成熟的地方多多指教，请到我github的文章下留言~</p>
+</blockquote>
+
+<h1 id="项目浅谈-就个人的毕设而言">项目浅谈（就个人的毕设而言）</h1>
+
+<p>项目本身是一个web系统的开发项目，业务场景可以参考企业网站的环境搭建。因而可以想到项目本身需要具有以下特点：</p>
+
+<ul>
+<li>可拓展性</li>
+<li>可维护性</li>
+<li>开发成本</li>
+<li>兼容性</li>
+</ul>
+
+<h4 id="可拓展性">可拓展性</h4>
+
+<p>项目不肯能永远只有固定数目的功能，随着业务方的需求变动，项目必然会随之增加/减少/改变相应的功能，因而，无论是前端还是后端，在做的时候，都需要考虑到这点 <br />
+对于项目的各个功能，存在着如下情况：（代码方面不分析）</p>
+
+<ol>
+<li><p>新功能，需要现开发</p>
+
+<ul>
+<li>企业网站的功能往往要求比较复杂，一个大的功能项下通常存在着很多细节性的功能，繁重而琐碎，也因而，往往是一个小组去负责一个功能项，那么为了契合大框架，使用的技术栈几乎是和网站的框架相同的</li>
+</ul></li>
+
+<li><p>旧功能，需要从已有项目上接入</p>
+
+<ul>
+<li>这里，大多数情况下，老项目的技术栈如其名，很老了，如果想要接入新的框架中，开发方式的差异导致其无法像新项目一样，直接嵌入到新的整体框架中，而解决方法，我脑海里想到的是<strong>前端微服务</strong> &lt;&gt;这个技术，在接驳新老项目的的业务场景中，出现的很频繁，当然，本篇文章中不会详细解释这种技术，因为功能都是新开发的而且不会太大2333~，所以不会用到~~</li>
+</ul></li>
+</ol>
+
+<h4 id="可维护性">可维护性</h4>
+
+<p>实际上，我的想法是有两点：</p>
+
+<ol>
+<li>开发的团队规范，对于后续的维护很重要。从最基本的<strong>代码语言规范</strong>到<strong>项目文档</strong>，稳当的充足与否，因为离职情况的存在，意味着前人的工作会被后人接盘，决定了后者能否快速熟悉老代码以及能否在短时间内快速产出。</li>
+<li>开发语言或者框架亦或是工具本身，不需要追求最新，但务必要有团队最稳定维护的版本，大型项目不要承担无谓的风险；但，也不要盲目规避，因为如果选择的版本太老了，同样是无意义的。</li>
+</ol>
+
+<h4 id="开发成本">开发成本</h4>
+
+<p>事实上，我印象的成本就是钱&hellip;，虽然俗了点哈哈。言归正传：</p>
+
+<ol>
+<li>人力成本 —— 需要多少人去参与到这个项目中 （就我一个~~）</li>
+<li>时间成本 —— 取决于项目需求以及开发前的准备情况（框架开发肯定比原生快，有现成的组件库肯定比自己写快&hellip;）考虑到现在的时间以及剩余的时间，前后端加起来留给我的任务只剩下一个月······，尴尬。</li>
+</ol>
+
+<h4 id="兼容性">兼容性</h4>
+
+<p>并不是说代码的兼容性，也不是跨端，本次项目单纯的pc&hellip;，我所说的兼容性，单纯的指向浏览器，谁让我是前端来着，因为是时间成本以及人力不足，所以，并不向下兼容，当然其实都是可以通过webpack地插件配置来进行转换的，不过我没时间。。。 <br />
+另外，很少由互联网企业还在用老IE，这也勉强算一个理由。</p>
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/drafts/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/%E8%AE%BE%E5%A4%87%E5%83%8F%E7%B4%A0%E6%AF%94%E7%AE%80%E4%BB%8B/">设备像素比简介</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1">毕业设计</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/json/</link>
+    <description>Recent content in Json on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 24 Jan 2018 15:01:27 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于object.key与object[key]的区别</title>
+      <link>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Wed, 24 Jan 2018 15:01:27 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>  记录所需要的，摒弃多余的。 本篇文章是对segmentfault的一个问答的总结。
+ obeject.key与object[key]有什么区别? 有什么区别，不试试怎么知道？
+测试代码（其实有很多栗子，随便举一个） var obj = { name: &#39;tom&#39;, age: 22 }, someKey = &#39;age&#39;; console.log(obj.name); console.log(obj[&#39;name&#39;]); console.log(obj.someKey); console.log(obj[someKey]);  测试结果： （放图） 通常来讲， obj[&amp;ldquo;key&amp;rdquo;] 与 obj.key 的作用差不多，但是，  如果key不确定（key是变量）的情况下， 或者key的写法比较特殊（比如包含空格什么的）  则只能通过obj[ ]的方式去访问 </description>
+    </item>
+    
+  </channel>
+</rss>

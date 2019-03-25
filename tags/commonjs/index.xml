@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commonjs on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/commonjs/</link>
+    <description>Recent content in Commonjs on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 28 Feb 2018 19:03:21 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/commonjs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>对CommonJS规范的一些理解</title>
+      <link>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
+      <pubDate>Wed, 28 Feb 2018 19:03:21 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;咸鱼了一个寒假，不能再这样了。。。
+学海无涯啊0.0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;概述&#34;&gt;概述&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Node 应用由模块组成，采用 CommonJS 模块规范。每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;        example.js
+        var x = 5;
+        var addX = function (value) {
+        return value + x;
+        };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面代码中，变量x和函数addX，是当前文件example.js私有的，其他文件不可见。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果想在多个文件分享变量，必须定义为global对象的属性。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    global.warning = true;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面代码的warning变量，可以被所有文件读取。当然，这样写法是不推荐的。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

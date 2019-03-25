@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>关于Win10安装MongoDB报错 | 青龙偃月的博客</title>
+    <meta property="og:title" content="关于Win10安装MongoDB报错 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-06-26T19:38:17&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-06-26T19:38:17&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="关于Win10安装MongoDB报错">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">关于Win10安装MongoDB报错</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年6月26日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <blockquote>
+<p>学校让留了一个爬虫任务，于是在我尝试着安装MongoDB时，遇到了这样的问题</p>
+</blockquote>
+
+<h4 id="描述如下">描述如下：</h4>
+
+<ul>
+<li>etup wizard ended prematurely because of an error.your system has not been modified.To. Install this program at a later time run setup wizard again.click finish button to exit the setup</li>
+</ul>
+
+<h4 id="关于解决办法">关于解决办法：</h4>
+
+<p>StackOverflow上给出的解决方案是：</p>
+
+<ul>
+<li><p>1）Choose Custom Installation</p></li>
+
+<li><p>2) Uncheck Compass Installation with MongoDb</p></li>
+
+<li><p>3) Finish the Setup</p></li>
+
+<li><p>4) Again start setup and click on change the installation</p></li>
+
+<li><p>5) Tick Compass Installation with MongoDb</p></li>
+
+<li><p>6) Finish the Setup</p></li>
+</ul>
+
+<h5 id="简单的来说就是">简单的来说就是：</h5>
+
+<p>需要在我们执行两次install.exe文件，
+ - 第一次执行，我们会遇到compass这个选项，然后选择不打勾，继续安装（我安装报错就是因为第一遍安装时，这个选项我打勾了。。。），这样会安装成功
+ - 第二次执行，会出现与第一次不同的界面，我们选择<code>change</code>选项，即为，改变安装项，这时，我们一路执行到上次没打勾的compass那里，然后 <strong>打勾</strong>,继续执行，安装成功</p>
+
+<p>附链接：<a href="https://stackoverflow.com/questions/48474477/mongodb-3-6-2-2008r2-plus-not-installing">https://stackoverflow.com/questions/48474477/mongodb-3-6-2-2008r2-plus-not-installing</a></p>
+                        </div>
+
+                        
+
+
+                        
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/mongodb">MongoDB</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

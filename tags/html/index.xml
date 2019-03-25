@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Html on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/html/</link>
+    <description>Recent content in Html on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 19 May 2018 19:43:13 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> HTML(5) 样式指南和代码约定</title>
+      <link>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</link>
+      <pubDate>Sat, 19 May 2018 19:43:13 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本篇内容转载自w3c
+良好且优秀的代码习惯是必要的，无论是开发成本上，还是从赏心悦目的程度上&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;html-代码约定&#34;&gt;HTML 代码约定&lt;/h3&gt;
+
+&lt;p&gt;web 开发者常常不确定在 HTML 中使用的代码样式和语法。
+通过 HTML5，您必须创建属于自己的最佳实践、样式指南和代码约定。
+智能且有未来保证对样式的合乎逻辑的使用，可以令其他人更容易理解和使用您的 HTML。&lt;br/&gt;
+在未来，诸如 XML 阅读器之类的程序，也许需要阅读您的 HTML。
+使用格式良好的“近似 XHTML 的”语法，能够更智能。&lt;/p&gt;
+
+&lt;h5 id=&#34;注释&#34;&gt;注释：&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;请始终保持您的样式智能、整洁、纯净、格式良好。&lt;br/&gt;请使用正确的文档类型请始终在文档的首行声明文档类型：&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

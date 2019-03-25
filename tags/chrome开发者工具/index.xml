@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chrome开发者工具 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in Chrome开发者工具 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 18 Nov 2018 20:47:17 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>chrome开发者工具面板功能解析</title>
+      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文大部分资料来源于互联网博客分享以及自身日常使用&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;chrome开发者工具&#34;&gt;Chrome开发者工具&lt;/h3&gt;
+
+&lt;p&gt;打开开发者工具，我们能看见的面板有：&lt;code&gt;Elements&lt;/code&gt;、&lt;code&gt;Console&lt;/code&gt;、&lt;code&gt;Sourse&lt;/code&gt;、&lt;code&gt;Network&lt;/code&gt;、&lt;code&gt;Timeline&lt;/code&gt;、&lt;code&gt;Profiles&lt;/code&gt;、&lt;code&gt;Application&lt;/code&gt;、&lt;code&gt;Security&lt;/code&gt;、&lt;code&gt;Aduits&lt;/code&gt;;
+功能大体如下所示：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome开发者工具Fidder请求信息颜色的含义</title>
+      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Sun, 18 Nov 2018 18:35:43 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description> 日常记录
+ 图片示例： 颜色 | 含义 -------- | --- 红色 | HTTP状态错误 黄色 | HTTP状态需要用户认证 灰色 | 数据流类型CONNECT 或者相应内容是图片 紫色 | 响应内容是css文件 蓝色 | 响应内容是HTML文件 绿色 | 相应内容是javascript文件  </description>
+    </item>
+    
+  </channel>
+</rss>

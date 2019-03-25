@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>chrome开发者工具面板功能解析 | 青龙偃月的博客</title>
+    <meta property="og:title" content="chrome开发者工具面板功能解析 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-11-18T20:47:17&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-11-18T20:47:17&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="chrome开发者工具面板功能解析">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">chrome开发者工具面板功能解析</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年11月18日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF">前端技术</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <blockquote>
+<p>本文大部分资料来源于互联网博客分享以及自身日常使用</p>
+</blockquote>
+
+<h3 id="chrome开发者工具">Chrome开发者工具</h3>
+
+<p>打开开发者工具，我们能看见的面板有：<code>Elements</code>、<code>Console</code>、<code>Sourse</code>、<code>Network</code>、<code>Timeline</code>、<code>Profiles</code>、<code>Application</code>、<code>Security</code>、<code>Aduits</code>;
+功能大体如下所示：</p>
+
+<ul>
+<li><strong>Element</strong> : 查找网页的源码HTML中的任意元素，手动修改任何元素的属性或者样式都能在浏览器上得到反馈。</li>
+<li><strong>Console</strong> : 可以记录开发者开发过程中的日志信息，并且能够作为一个<code>JS</code>的命令行式的交互shell</li>
+<li><strong>Sourse</strong> : 能够断点调试JS</li>
+<li><strong>Network</strong> : 从发起页面请求Request后，分析HTTP请求得到后的各个请求资源信息（状态、资源类型、大小、所用时间），可以根据这个进行网络性能优化。</li>
+<li><strong>Timeline</strong> : 记录分析在网站生命周期内所发生的各类事件，以此可以提高网页的运行时间的性能</li>
+<li><strong>Profiles</strong> : 如果需要Timeline所能提供更多的信息时，可以尝试一下Profiles，比如记录JS的CPU的执行时间细节、显示JS对象和相关的DOM节点的内存消耗、记录内存的分配细节。</li>
+<li><strong>Application</strong> 记录网站加载的所有资源的信息，包括存储数据（<code>Local Storage</code>、<code>Session Storage</code>、<code>IndexedDB</code>、<code>Web SQL</code>、<code>Cookies</code>）、缓存数据、字体、图片、脚本、样式表等</li>
+<li><strong>Security</strong> : 判断当前网页是否安全。</li>
+<li><strong>Audits</strong> : 对当前网页进行网络利用情况、网页性能方面的诊断，并给出一些优化建议。比如列出所有没有用到的CSS文件等。
+<br /></li>
+</ul>
+
+<h3 id="具体">具体</h3>
+
+<h4 id="network面板">Network面板</h4>
+
+<h5 id="概述">概述</h5>
+
+<p><strong>Net</strong>
+ - work面板可以记录页面上的网络请求的详情信息，从发起网页页面请求Request后分析HTTP请求后得到的各个请求资源信息（包括状态、资源类型、大小、所用时间、Request和Response等），可以根据这个进行网络性能优化。</p>
+
+<p>该面板主要包括5大块窗格(Pane)：
+ - 1.Controls 控制Network的外观和功能。</p>
+
+<ul>
+<li><p>2.Filters 控制Requests Table具体显示哪些内容。</p></li>
+
+<li><p>3.Overview 显示获取到资源的时间轴信息。</p></li>
+
+<li><p>4.Requests Table 按资源获取的前后顺序显示所有获取到的资源信息，点击资源名可以查看该资源的详细信息。</p></li>
+
+<li><p>5.Summary 显示总的请求数、数据传输量、加载时间信息。</p></li>
+</ul>
+
+<p>其中 Requests Table 显示如下信息列：
+ - Name 资源名称，点击名称可以查看资源的详情情况，包括      - Headers
+    - Preview
+    - Response
+    - Cookies
+    - Timing
+    -
+<strong>Status</strong> : HTTP状态码。</p>
+
+<p><strong>Type</strong> : 请求的资源MIME类型。</p>
+
+<p><strong>Initiator</strong> :  标记请求是由哪个对象或进程发起的（请求源）。</p>
+
+<ul>
+<li><p>Parser: 请求由Chrome的HTML解析器时发起的。</p></li>
+
+<li><p>Redirect : 请求是由HTTP页面重定向发起的。</p></li>
+
+<li><p>Script : 请求是由Script脚本发起的。</p></li>
+
+<li><p>Other : 请求是由其他进程发起的，比如用户点击一个链接跳转到另一个页面或者在地址栏输入URL地址。</p></li>
+</ul>
+
+<p><strong>Size</strong> : 从服务器下载的文件和请求的资源大小。如果是从缓存中取得的资源则该列会显示(from cache)</p>
+
+<p><strong>Time</strong> : 请求或下载的时间，从发起Request到获取到Response所用的总时间。</p>
+
+<p><strong>Timeline</strong> : 显示所有网络请求的可视化瀑布流(时间状态轴)，点击时间轴，可以查看该请求的详细信息，点击列头则可以根据指定的字段可以排序。</p>
+
+<h5 id="捕获屏幕">捕获屏幕</h5>
+
+<p><strong>Controls</strong>
+窗格包括的功能有网络日志录制、日志清理、捕获屏幕、过滤器，视图切换、保留日志开关、Cache开关、网络连接开关、网速阀值。
+以捕获屏幕为例，点击摄像机按钮（捕获屏幕），重新加载页面即可捕获屏幕。
+<code>双击</code>其中的截屏可以放大显示，在放大的图下方可以点击跳转到上一帧或者下一帧。
+<code>单击</code>则可以查看该帧被捕获时的网络请求信息，并且在<code>Overview</code>上会有一条黄色竖线以标记该帧被捕获的具体时间点。</p>
+
+<p>查看<code>DOMContentLoaded</code>和<code>load</code>事件信息
+<strong>DOMContentLoaded</strong>和<strong>load</strong>
+这两个事件会高亮显示。
+DOMContentLoaded事件会在页面上DOM完全加载并解析完毕之后触发，不会等待CSS、图片、子框架加载完成。 load事件会在页面上所有DOM、CSS、JS、图片完全加载完毕之后触发。
+DOMContentLoaded
+事件在Overview上用一条蓝色竖线标记，并且在Summary以蓝色文字显示确切的时间。
+load
+事件同样会在Overview和Requests Table上用一条红色竖线标记，在Summary也会以红色文字显示确切的时间。</p>
+
+<h5 id="查看具体资源的详情">查看具体资源的详情</h5>
+
+<p>通过点击某个资源的Name可以查看该资源的详细信息，根据选择的资源类型显示的信息也不太一样，可能包括如下Tab信息：
+<strong>Headers</strong> 该资源的HTTP头信息。</p>
+
+<p><strong>Preview</strong> 根据你所选择的资源类型（JSON、图片、文本）显示相应的预览。</p>
+
+<p><strong>Response</strong> 显示HTTP的Response信息。</p>
+
+<p><strong>Cookies</strong> 显示资源HTTP的Request和Response过程中的Cookies信息。</p>
+
+<p><strong>Timing</strong> 显示资源在整个请求生命周期过程中各部分花费的时间。</p>
+
+<p>针对上面5个Tab进行详细讲解一下各个功能：
+ - ① 查看资源HTTP头信息
+    - 在Headers标签里面可以看到
+        - <code>HTTP Request URL</code>
+        - <code>HTTP Method</code>
+        - <code>Status Code</code>
+        - <code>Remote Address</code>
+        - 等基本信息和详细的<code>Response Headers</code> 、<code>Request Headers</code>以及<code>Query String Parameters</code>或者<code>Form Data</code>等信息。</p>
+
+<ul>
+<li><p>② 查看资源预览信息</p>
+
+<ul>
+<li>在Preview标签里面可根据选择的资源类型（JSON、图片、文本、JS、CSS）显示相应的预览信息。下图显示的是当选择的资源是JSON格式时的预览信息。</li>
+</ul></li>
+
+<li><p>③ 查看资源HTTP的Response信息</p>
+
+<ul>
+<li>在Response标签里面可根据选择的资源类型（JSON、图片、文本、JS、CSS）显示相应资源的Response响应内容。下图显示的是当选择的资源是CSS格式时的响应内容。</li>
+</ul></li>
+
+<li><p>④ 查看资源Cookies信息</p>
+
+<ul>
+<li>如果选择的资源在Request和Response过程中存在Cookies信息，则Cookies标签会自动显示出来，在里面可以查看所有的Cookies信息。</li>
+</ul></li>
+
+<li><p>⑤ 分析资源在请求的生命周期内各部分时间花费信息</p>
+
+<ul>
+<li>在Timing标签中可以显示资源在整个请求生命周期过程中各部分时间花费信息，可能会涉及到如下过程的时间花费情况：</li>
+<li>Queuing 排队的时间花费。可能由于该请求被渲染引擎认为是优先级比较低的资源（图片）、服务器不可用、超过浏览器的并发请求的最大连接数（Chrome的最大并发连接数为6）.</li>
+
+<li><p>Stalled 从HTTP连接建立到请求能够被发出送出去(真正传输数据)之间的时间花费。包含用于处理代理的时间，如果有已经建立好的连接，这个时间还包括等待已建立连接被复用的时间。</p></li>
+
+<li><p>Proxy Negotiation 与代理服务器连接的时间花费。</p></li>
+
+<li><p>DNS Lookup 执行DNS查询的时间。网页上每一个新的域名都要经过一个DNS查询。第二次访问浏览器有缓存的话，则这个时间为0。</p></li>
+
+<li><p>Initial Connection / Connecting 建立连接的时间花费，包含了TCP握手及重试时间。</p></li>
+
+<li><p>SSL 完成SSL握手的时间花费。</p></li>
+
+<li><p>Request sent 发起请求的时间。</p></li>
+
+<li><p>Waiting (Time to first byte (TTFB)) 是最初的网络请求被发起到从服务器接收到第一个字节这段时间，它包含了TCP连接时间，发送HTTP请求时间和获得响应消息第一个字节的时间。</p></li>
+
+<li><p>Content Download 获取Response响应数据的时间花费。</p></li>
+
+<li><p>TTFB这个部分的时间花费如果超过200ms，则应该考虑对网络进行性能优化了，可以参见网络性能优化方案及里面的相关参考文档。</p>
+
+<h5 id="查看资源的发起者-请求源-和依赖项">查看资源的发起者(请求源)和依赖项</h5>
+
+<p>通过按住Shift
+并且把光标移到资源名称上，可以查看该资源是由哪个对象或进程发起的（请求源）和对该资源的请求过程中引发了哪些资源（依赖资源）。
+在该资源的上方第一个标记为绿色的资源就是该资源的发起者（请求源），有可能会有第二个标记为绿色的资源是该资源的发起者的发起者，以此类推。</p></li>
+</ul></li>
+</ul>
+
+<blockquote>
+<p>本文链接：<a href="https://www.jianshu.com/p/4b2029cb8594">https://www.jianshu.com/p/4b2029cb8594</a>
+感谢答疑解惑</p>
+</blockquote>
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/">chrome开发者工具Fidder请求信息颜色的含义</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7">chrome开发者工具</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

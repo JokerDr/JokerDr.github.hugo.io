@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css兼容性 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/</link>
+    <description>Recent content in Css兼容性 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 17 Nov 2018 14:35:26 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DOMContentLoad 与 Load 区别</title>
+      <link>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sat, 17 Nov 2018 14:35:26 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</guid>
+      <description>前言 关于DOMContentLoad？直白的说，就是DOM内容加载完毕。那么 - 1.什么时候dom加载完毕？ 当html解析完毕形成DOM树 下面是浏览器解析的快照： 没有脚本时，浏览器解析完DOM会立即触发DOMContentLoad；如果包含脚本，且非异步的情况下，由于js是单线程，脚本的加载往往会阻塞DOM的解析，而脚本往往需要等位于脚本前的css文件执行完毕才能执行，任何情况下，DOMContentLoad不需要等待图片等其他资源的加载完成。 关于Load，页面上的所有资源（音频、视频、图片等），被夹在后才会触发Load事件，也就是说，二者事件的触发顺序是DOMContentLoad &amp;gt; Load</description>
+    </item>
+    
+  </channel>
+</rss>

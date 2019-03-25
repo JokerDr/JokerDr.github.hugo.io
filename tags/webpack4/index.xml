@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Webpack4 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/webpack4/</link>
+    <description>Recent content in Webpack4 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 18 Nov 2018 20:47:17 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/webpack4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于webpack4配置错误的记录</title>
+      <link>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;h2 id=&#34;错误-一&#34;&gt;错误（一）&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;webpack.optimize.CommonsChunkPlugin has been removed, , please use config.optimization.splitChunks instead.&lt;/code&gt;
+- 正如其所述， &lt;code&gt;webpack.optimize.CommonsChunkPlugin&lt;/code&gt;在webpck4版本已经移除了，新版本插件的使用方法(&lt;a href=&#34;https://webpack.js.org/plugins/split-chunks-plugin/&#34; title=&#34;split-chunks-plugin&#34;&gt;gm的地址&lt;/a&gt;是用与entry，plugins等属性同级别的optimization，其下有一个splitChunks属性来代替；&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

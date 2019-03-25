@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.54.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MongoDB帮助文档 | 青龙偃月的博客</title>
+    <meta property="og:title" content="MongoDB帮助文档 - 青龙偃月的博客">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-06-26T21:00:57&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-06-26T21:00:57&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="MongoDB帮助文档">
+        
+    <meta name="author" content="青龙偃月">
+    <meta property="og:url" content="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+        <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://www.flysnow.org">
+                        青龙偃月的博客
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://www.flysnow.org">首页</a>
+                    
+                    <a  href="http://www.flysnow.org/others/" title="杂记">杂记</a>
+                    
+                    <a  href="http://www.flysnow.org/archives/" title="归档">归档</a>
+                    
+                    <a  href="http://www.flysnow.org/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">MongoDB帮助文档</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年6月26日
+                        </date>
+                        
+                        <div class="post-meta">
+                            <span>|</span>
+                            
+                                <span class="meta-category"><a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a></span>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-content">
+                            <h3 id="db的帮助文档">db的帮助文档</h3>
+
+<pre><code class="language-bash">    db.help();
+</code></pre>
+
+<h4 id="输出">输出:</h4>
+
+<pre><code class="language-bash">
+    db.adminCommand(nameOrDocument)// 切换到'admin'数据库,并且运行命令
+    db.AddUser(username,password[, readOnly=false])  //添加用户  
+    db.auth(usrename,password)     // 设置数据库连接验证  
+    db.cloneDataBase(fromhost)     // 从目标服务器克隆一个数据库  
+    db.commandHelp(name)           // returns the help for the command  
+    db.copyDatabase(fromdb,todb,fromhost)  // 复制数据库fromdb---源数据库名称，todb---目标数据库名称，fromhost---源数据库服务器地址  
+    db.createCollection(name,{size:3333,capped:333,max:88888})  // 创建一个数据集，相当于一个表  
+    db.createView(name, viewOn, [ { $operator: {...}}, ... ], { viewOptions } ) // 创建视图
+    db.createUser(userDocument)    // 创建用户
+    db.currentOp()                 // 取消当前库的当前操作  
+    db.dropDataBase()              // 删除当前数据库  
+    db.eval(func,args)             // (已过时) run code server-side  
+    db.fsyncLock()                 // 将数据保存到硬盘并且锁定服务器备份
+    db.fsyncUnlock() unlocks server following a db.fsyncLock()
+    db.getCollection(cname)        // 取得一个数据集合，同用法：db['cname'] or db.cname
+    db.getCollenctionNames()       // 取得所有数据集合的名称列表  
+    db.getLastError()              // 返回最后一个错误的提示消息  
+    db.getLastErrorObj()           // 返回最后一个错误的对象  
+    db.getLogComponents()
+    db.getMongo()                  // 取得当前服务器的连接对象get the server  
+    db.getMondo().setSlaveOk()     // allow this connection to read from then nonmaster membr of a replica pair  
+    db.getName()                   // 返回当操作数据库的名称  
+    db.getPrevError()              // 返回上一个错误对象  
+    db.getProfilingLevel()         // 获取profile level  
+    db.getReplicationInfo()        // 获得重复的数据  
+    db.getSisterDB(name)           // get the db at the same server as this onew  
+    db.killOp()                    // 停止（杀死）在当前库的当前操作 
+    db.listCommands()              // lists all the db commands
+    db.loadServerScripts()         // loads all the scripts in db.system.js
+    db.logout()
+    db.printCollectionStats()      // 返回当前库的数据集状态  
+    db.printReplicationInfo()      // 打印主数据库的复制状态信息  
+    db.printSlaveReplicationInfo() // 打印从数据库的复制状态信息  
+    db.printShardingStatus()       // 返回当前数据库是否为共享数据库  
+    db.removeUser(username)        // 删除用户  
+    db.repairDatabase()            // 修复当前数据库  
+    db.resetError()  
+    db.runCommand(cmdObj)          // run a database command. if cmdObj is a string, turns it into {cmdObj:1}  
+    db.runCommand(cmdObj)          // run a database command.  if cmdObj is a string, turns it into { cmdObj : 1 }
+    db.serverStatus()
+    db.setLogLevel(level, &lt;component&gt;)
+    db.setProfilingLevel(level, &lt;slowms&gt;)    // 设置profile level 0=off,1=slow,2=all 
+    db.setWriteConcern( &lt;write concern doc&gt; ) // sets the write concern for writes to the db
+    db.unsetWriteConcern( &lt;write concern doc&gt; ) // unsets the write concern for writes to the db
+    db.setVerboseShell(flag)       // display extra information in shell output
+    db.shutdownServer()            // 关闭当前服务程序  
+    db.stats()                     // 返回当前数据库的状态信息
+    db.version()                   // 返回当前程序的版本信息
+</code></pre>
+
+<h3 id="表的帮助">表的帮助</h3>
+
+<pre><code class="language-bash">    db.tableName.help();
+</code></pre>
+
+<h4 id="输出-1">输出:</h4>
+
+<pre><code class="language-bash">    db.test.find({id:10})          // 返回test数据集ID=10的数据集  
+    db.test.find({id:10}).count()  // 返回test数据集ID=10的数据总数  
+    db.test.find({id:10}).limit(2) // 返回test数据集ID=10的数据集从第二条开始的数据集  
+    db.test.find({id:10}).skip(8)  // 返回test数据集ID=10的数据集从0到第八条的数据集  
+    db.test.find({id:10}).limit(2).skip(8)  // 返回test数据集ID=1=的数据集从第二条到第八条的数据  
+    db.test.find({id:10}).sort()   // 返回test数据集ID=10的排序数据集  
+    db.test.findOne([query])       // 返回符合条件的一条数据  
+    db.test.getDB()                // 返回此数据集所属的数据库名称  
+    db.test.getIndexes()           // 返回些数据集的索引信息  
+    db.test.group({key:...,initial:...,reduce:...[,cond:...]})    // 返回分组信息  
+    db.test.mapReduce(mayFunction,reduceFunction,&lt;optional params&gt;)  // 这个有点像存储过程  
+    db.test.remove(query)                      // 在数据集中删除一条数据  
+    db.test.renameCollection(newName)          // 重命名些数据集名称  
+    db.test.save(obj)                          // 往数据集中插入一条数据  
+    db.test.stats()                            // 返回此数据集的状态  
+    db.test.storageSize()                      // 返回此数据集的存储大小  
+    db.test.totalIndexSize()                   // 返回此数据集的索引文件大小  
+    db.test.totalSize()                        // 返回些数据集的总大小  
+    db.test.update(query,object[,upsert_bool]) // 在此数据集中更新一条数据  
+    db.test.validate()                         // 验证此数据集  
+    db.test.getShardVersion()                  // 返回数据集共享版本号  
+</code></pre>
+                        </div>
+
+                        
+
+
+                        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/">关于Win10安装MongoDB报错</a></li>
+        
+    </ul>
+</div>
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            <ul class="clearfix">
+                                
+                                <li><a href="http://www.flysnow.org/tags/mongodb">MongoDB</a></li>
+                                
+                            </ul>
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://www.flysnow.org">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（后端）">毕业设计的二三事——开发环境搭建篇（后端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——开发环境搭建篇（前端）">毕业设计的二三事——开发环境搭建篇（前端）</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/" title="毕业设计的二三事——项目相关">毕业设计的二三事——项目相关</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/" title="chrome开发者工具面板功能解析">chrome开发者工具面板功能解析</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/" title="关于webpack4配置错误的记录">关于webpack4配置错误的记录</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/" title="chrome开发者工具Fidder请求信息颜色的含义">chrome开发者工具Fidder请求信息颜色的含义</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/" title="DOMContentLoad 与 Load 区别">DOMContentLoad 与 Load 区别</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="深拷贝的实现">深拷贝的实现</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/" title="mongo.exe启动后报错">mongo.exe启动后报错</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/" title="MongoDB帮助文档">MongoDB帮助文档</a>
+    </li>
+    
+</ul>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/http/">http(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/restful/">restful(1)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/">前端技术(17)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令(2)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计(3)</a>
+    </li>
+    
+    <li>
+        <a href="http://www.flysnow.org/categories/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/">算法基础(3)</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="http://www.flysnow.org/tags/ajax/">ajax</a>
+    
+    <a href="http://www.flysnow.org/tags/appy-call/">appy-call</a>
+    
+    <a href="http://www.flysnow.org/tags/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7/">chrome开发者工具</a>
+    
+    <a href="http://www.flysnow.org/tags/commonjs/">commonjs</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/">css兼容</a>
+    
+    <a href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9%E6%80%A7/">css兼容性</a>
+    
+    <a href="http://www.flysnow.org/tags/hexo/">hexo</a>
+    
+    <a href="http://www.flysnow.org/tags/html/">html</a>
+    
+    <a href="http://www.flysnow.org/tags/jquery/">jquery</a>
+    
+    <a href="http://www.flysnow.org/tags/json/">json</a>
+    
+    <a href="http://www.flysnow.org/tags/location/">location</a>
+    
+    <a href="http://www.flysnow.org/tags/markdown/">markdown</a>
+    
+    <a href="http://www.flysnow.org/tags/maxlength/">maxlength</a>
+    
+    <a href="http://www.flysnow.org/tags/mongodb/">mongodb</a>
+    
+    <a href="http://www.flysnow.org/tags/restful/">restful</a>
+    
+    <a href="http://www.flysnow.org/tags/webpack4/">webpack4</a>
+    
+    <a href="http://www.flysnow.org/tags/webpck4/">webpck4</a>
+    
+    <a href="http://www.flysnow.org/tags/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/">二分查找</a>
+    
+    <a href="http://www.flysnow.org/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%BD%8D%E7%BD%AE/">字符串位置</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/">插入排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/">毕业设计</a>
+    
+    <a href="http://www.flysnow.org/tags/%E6%B7%B1%E6%8B%B7%E8%B4%9D/">深拷贝</a>
+    
+    <a href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/">请求方式</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/">选择排序</a>
+    
+    <a href="http://www.flysnow.org/tags/%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6/">逻辑运算符</a>
+    
+</div>
+    </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="http://www.flysnow.org/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2019 <a href="http://www.flysnow.org">青龙偃月的博客 By 青龙偃月</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script type="text/javascript">
+    
+    (function(){
+        $("pre code").parent().addClass("line-numbers")
+    }())
+
+    window.MathJax = {
+        tex2jax: {
+            inlineMath: [ ['$','$'] ],
+            processEscapes: true
+        }
+    };
+    </script>
+    <script type="text/javascript" src="/js/prism.js" async="true"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+
+
+
+</body>
+</html>

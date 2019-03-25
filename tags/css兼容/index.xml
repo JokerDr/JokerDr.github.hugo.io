@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css兼容 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/</link>
+    <description>Recent content in Css兼容 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 19 Jan 2018 09:33:33 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/css%E5%85%BC%E5%AE%B9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>css解决背景透明的兼容性问题</title>
+      <link>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 19 Jan 2018 09:33:33 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;h3 id=&#34;全浏览器兼容背景半透明的问题的么几个解决方案&#34;&gt;全浏览器兼容背景半透明的问题的么几个解决方案：&lt;/h3&gt;
+
+&lt;h5 id=&#34;1-使用半透明png图片平铺&#34;&gt;1.使用半透明png图片平铺&lt;/h5&gt;
+
+&lt;h5 id=&#34;2-使用opcacity属性&#34;&gt;2.使用opcacity属性&lt;/h5&gt;
+
+&lt;h5 id=&#34;3-使用rgba和ie的opacity滤镜属性结合&#34;&gt;3.使用rgba和IE的opacity滤镜属性结合&lt;/h5&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

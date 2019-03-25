@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>请求方式 on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/</link>
+    <description>Recent content in 请求方式 on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 18 May 2018 21:40:11 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/tags/%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> 前端提交数据的那些方式</title>
+      <link>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Fri, 18 May 2018 21:40:11 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;声明：本篇文章转自&lt;a href=&#34;https://blog.csdn.net/dancen/article/details/37572101，&#34;&gt;https://blog.csdn.net/dancen/article/details/37572101，&lt;/a&gt;
+相比其他浅显的文章，这篇更让我收获颇多，
+另外，文章已略作修改，更易于自己理解
+文章待完善&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Http定义了与服务器交互的不同方法，最基本的方法有很多种，今天要说的分别是&lt;code&gt;GET&lt;/code&gt;，&lt;code&gt;POST&lt;/code&gt;，&lt;code&gt;PUT&lt;/code&gt;，&lt;code&gt;DELETE&lt;/code&gt;。&lt;br/&gt;
+另外，关于&lt;code&gt;URL&lt;/code&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Uniform Resource Location 全称是资源定位符 (暂时不做和URI的区分)&lt;/li&gt;
+&lt;li&gt;用于请求获取具体路径上的资源&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HTTP中的&lt;code&gt;GET&lt;/code&gt;，&lt;code&gt;POST&lt;/code&gt;，&lt;code&gt;PUT&lt;/code&gt;，&lt;code&gt;DELETE&lt;/code&gt;，对应的资源操作是————查，改，增，删。&lt;br/&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET&lt;/code&gt;一般用于获取/查询资源信息，&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST&lt;/code&gt;一般用于更新资源信息。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

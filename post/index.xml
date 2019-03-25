@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 青龙偃月的博客</title>
+    <link>http://www.flysnow.org/post/</link>
+    <description>Recent content in Posts on 青龙偃月的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 23 Mar 2019 21:05:59 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.flysnow.org/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>毕业设计的二三事——开发环境搭建篇（后端）</title>
+      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</link>
+      <pubDate>Sat, 23 Mar 2019 21:05:59 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%90%8E%E7%AB%AF/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;不是教程~， 单纯的对后端开发环境的选用以及配置过程的问题进行总结&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;关于技术选型&#34;&gt;关于技术选型&lt;/h4&gt;
+
+&lt;p&gt;选用lavarel（php）框架。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;但是基于以前有过php以及CI（php）框架的使用经验，上手较快&lt;/li&gt;
+&lt;li&gt;相较于CI，lavarel的使用更加优雅，且受欢迎度以比较高，对于大中型项目而言，lavarel更能胜任&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;关于本地开发环境的配置&#34;&gt;关于本地开发环境的配置&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;window10&lt;/li&gt;
+&lt;li&gt;virtual—box&lt;/li&gt;
+&lt;li&gt;vagrant&lt;/li&gt;
+&lt;li&gt;lavarel/homestead (lavarel的集成开发盒子)&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>毕业设计的二三事——开发环境搭建篇（前端）</title>
+      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Sat, 23 Mar 2019 17:30:34 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本篇主要说明&lt;strong&gt;前端开发环境的选择&lt;/strong&gt;&amp;amp;&amp;amp;&lt;strong&gt;搭建过程中遇到的问题&lt;/strong&gt;&amp;amp;&amp;amp;&lt;strong&gt;相应的解决思路&lt;/strong&gt;，我并不会给出具体的解决方案，我会给出思路，因为方案其实不是很重要，解决问题的方向才是最重要的，这个过程中我踩了很多的坑~&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;技术栈的选择&#34;&gt;技术栈的选择&lt;/h2&gt;
+
+&lt;p&gt;说一下我这里选择的前端的技术栈: Webpack + Typescript + React + Mobx + AntDesign
+选择的原因么，两点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;webpack是为了快速开发，丰富的插件提供了各式各样的支持。&lt;/li&gt;
+&lt;li&gt;Typescript 项目的开发更加的严谨，减少不必要的错误。&lt;/li&gt;
+&lt;li&gt;react的拓展性能相较于vue更好些，作为大型的项目来开发选择react准没错，当然，vue3也是用ts重写了的，但是由于其提供的全家桶开发更倾向于与单页应用，所以我拒绝。- - - mobx，我不会redux，而mobx在实习期间用过，而且使用更简单。&lt;/li&gt;
+&lt;li&gt;AntD, 现成的轮子不用还自己造，嘿嘿，更何况这套组件的设计本身就非常棒可以看看源码去学习一下。另外现造轮子其实没多大意义, 除非兴趣所在。&lt;/li&gt;
+&lt;li&gt;我以前在实习的时候，曾经在公司中使用过这种技术栈，所以尝试自己搭个架子，现在看来还不错&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这里选择性行的展示一下pakage.json的内容：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;webpack&amp;rdquo;: &amp;ldquo;^4.29.6&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;@babel/core&amp;rdquo;: &amp;ldquo;^7.4.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;@types/react&amp;rdquo;: &amp;ldquo;^16.8.7&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;@types/react-dom&amp;rdquo;: &amp;ldquo;^16.8.2&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;rdquo;@types/react-router-dom&amp;rdquo;: &amp;ldquo;^4.3.1&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;antd&amp;rdquo;: &amp;ldquo;^3.15.1&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;awesome-typescript-loader&amp;rdquo;: &amp;ldquo;^5.2.1&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;mobx&amp;rdquo;: &amp;ldquo;^5.9.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;mobx-react&amp;rdquo;: &amp;ldquo;^5.4.3&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;typescript&amp;rdquo;: &amp;ldquo;^3.3.3333&amp;rdquo;,&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;typings-for-css-modules-loader&amp;rdquo;: &amp;ldquo;^1.7.0&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;于写这篇博客的时间而言，都是最新最适合的版本&lt;/p&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+    <item>
+      <title>毕业设计的二三事——项目相关</title>
+      <link>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Sat, 23 Mar 2019 10:21:05 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2019/03/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AF%87%E5%89%8D%E7%AB%AF/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;临近毕业，毕设是做个xxx的管理系统，分析完需求后，思来想去还是觉得应该好好地做一下2333~，当然由于经验问题，接下来本系列的一切由我的个人实习经历+实际经历+网络资料调研结合而成，简单的写一写，不成熟的地方多多指教，请到我github的文章下留言~&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;项目浅谈-就个人的毕设而言&#34;&gt;项目浅谈（就个人的毕设而言）&lt;/h1&gt;
+
+&lt;p&gt;项目本身是一个web系统的开发项目，业务场景可以参考企业网站的环境搭建。因而可以想到项目本身需要具有以下特点：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可拓展性&lt;/li&gt;
+&lt;li&gt;可维护性&lt;/li&gt;
+&lt;li&gt;开发成本&lt;/li&gt;
+&lt;li&gt;兼容性&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;可拓展性&#34;&gt;可拓展性&lt;/h4&gt;
+
+&lt;p&gt;项目不肯能永远只有固定数目的功能，随着业务方的需求变动，项目必然会随之增加/减少/改变相应的功能，因而，无论是前端还是后端，在做的时候，都需要考虑到这点 &lt;br /&gt;
+对于项目的各个功能，存在着如下情况：（代码方面不分析）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome开发者工具面板功能解析</title>
+      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link>
+      <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E9%9D%A2%E6%9D%BF%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本文大部分资料来源于互联网博客分享以及自身日常使用&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;chrome开发者工具&#34;&gt;Chrome开发者工具&lt;/h3&gt;
+
+&lt;p&gt;打开开发者工具，我们能看见的面板有：&lt;code&gt;Elements&lt;/code&gt;、&lt;code&gt;Console&lt;/code&gt;、&lt;code&gt;Sourse&lt;/code&gt;、&lt;code&gt;Network&lt;/code&gt;、&lt;code&gt;Timeline&lt;/code&gt;、&lt;code&gt;Profiles&lt;/code&gt;、&lt;code&gt;Application&lt;/code&gt;、&lt;code&gt;Security&lt;/code&gt;、&lt;code&gt;Aduits&lt;/code&gt;;
+功能大体如下所示：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于webpack4配置错误的记录</title>
+      <link>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Sun, 18 Nov 2018 20:47:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/%E5%85%B3%E4%BA%8Ewebpack4%E9%85%8D%E7%BD%AE%E9%94%99%E8%AF%AF%E7%9A%84%E8%AE%B0%E5%BD%95/</guid>
+      <description>&lt;h2 id=&#34;错误-一&#34;&gt;错误（一）&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;webpack.optimize.CommonsChunkPlugin has been removed, , please use config.optimization.splitChunks instead.&lt;/code&gt;
+- 正如其所述， &lt;code&gt;webpack.optimize.CommonsChunkPlugin&lt;/code&gt;在webpck4版本已经移除了，新版本插件的使用方法(&lt;a href=&#34;https://webpack.js.org/plugins/split-chunks-plugin/&#34; title=&#34;split-chunks-plugin&#34;&gt;gm的地址&lt;/a&gt;是用与entry，plugins等属性同级别的optimization，其下有一个splitChunks属性来代替；&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>chrome开发者工具Fidder请求信息颜色的含义</title>
+      <link>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</link>
+      <pubDate>Sun, 18 Nov 2018 18:35:43 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7fidder%E8%AF%B7%E6%B1%82%E4%BF%A1%E6%81%AF%E9%A2%9C%E8%89%B2%E7%9A%84%E5%90%AB%E4%B9%89/</guid>
+      <description> 日常记录
+ 图片示例： 颜色 | 含义 -------- | --- 红色 | HTTP状态错误 黄色 | HTTP状态需要用户认证 灰色 | 数据流类型CONNECT 或者相应内容是图片 紫色 | 响应内容是css文件 蓝色 | 响应内容是HTML文件 绿色 | 相应内容是javascript文件  </description>
+    </item>
+    
+    <item>
+      <title>DOMContentLoad 与 Load 区别</title>
+      <link>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Sat, 17 Nov 2018 14:35:26 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/11/domcontentload-%E4%B8%8E-load-%E5%8C%BA%E5%88%AB/</guid>
+      <description>前言 关于DOMContentLoad？直白的说，就是DOM内容加载完毕。那么 - 1.什么时候dom加载完毕？ 当html解析完毕形成DOM树 下面是浏览器解析的快照： 没有脚本时，浏览器解析完DOM会立即触发DOMContentLoad；如果包含脚本，且非异步的情况下，由于js是单线程，脚本的加载往往会阻塞DOM的解析，而脚本往往需要等位于脚本前的css文件执行完毕才能执行，任何情况下，DOMContentLoad不需要等待图片等其他资源的加载完成。 关于Load，页面上的所有资源（音频、视频、图片等），被夹在后才会触发Load事件，也就是说，二者事件的触发顺序是DOMContentLoad &amp;gt; Load</description>
+    </item>
+    
+    <item>
+      <title>深拷贝的实现</title>
+      <link>http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Sun, 28 Oct 2018 15:49:24 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/10/%E6%B7%B1%E6%8B%B7%E8%B4%9D%E7%9A%84%E5%AE%9E%E7%8E%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;好久没有更新了，一些个人原因，&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
+
+&lt;p&gt;最近在面试中，被问到深拷贝的实现，讲真，每次想起深拷贝，总会想起JSON那两个方法，然而实际上，从逻辑角度来看，这是不合理的，如果只是单纯想深拷贝而非json相关转化，不应该使用JSON对象的方法进行深拷贝转化，&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>mongo.exe启动后报错</title>
+      <link>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Tue, 26 Jun 2018 21:10:58 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/mongo-exe%E5%90%AF%E5%8A%A8%E5%90%8E%E6%8A%A5%E9%94%99/</guid>
+      <description>&lt;h3 id=&#34;mongodb的使用报错信息&#34;&gt;MongoDB的使用报错信息&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    Server has startup warnings:
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.339-0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.340-0700 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          Start the server with --bind_ip &amp;lt;address&amp;gt; to specify which IP
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.341-0700 I CONTROL  [initandlisten]
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+    2018-06-26T05:43:00.342-0700 I CONTROL  [initandlisten]
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>MongoDB帮助文档</title>
+      <link>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Tue, 26 Jun 2018 21:00:57 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/mongodb%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/</guid>
+      <description>&lt;h3 id=&#34;db的帮助文档&#34;&gt;db的帮助文档&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    db.help();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;输出&#34;&gt;输出:&lt;/h4&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于Win10安装MongoDB报错</title>
+      <link>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Tue, 26 Jun 2018 19:38:17 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/06/%E5%85%B3%E4%BA%8Ewin10%E5%AE%89%E8%A3%85mongodb%E6%8A%A5%E9%94%99/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;学校让留了一个爬虫任务，于是在我尝试着安装MongoDB时，遇到了这样的问题&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&#34;描述如下&#34;&gt;描述如下：&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;etup wizard ended prematurely because of an error.your system has not been modified.To. Install this program at a later time run setup wizard again.click finish button to exit the setup&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title> HTML(5) 样式指南和代码约定</title>
+      <link>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</link>
+      <pubDate>Sat, 19 May 2018 19:43:13 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/html-5-%E6%A0%B7%E5%BC%8F%E6%8C%87%E5%8D%97%E5%92%8C%E4%BB%A3%E7%A0%81%E7%BA%A6%E5%AE%9A/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;本篇内容转载自w3c
+良好且优秀的代码习惯是必要的，无论是开发成本上，还是从赏心悦目的程度上&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;html-代码约定&#34;&gt;HTML 代码约定&lt;/h3&gt;
+
+&lt;p&gt;web 开发者常常不确定在 HTML 中使用的代码样式和语法。
+通过 HTML5，您必须创建属于自己的最佳实践、样式指南和代码约定。
+智能且有未来保证对样式的合乎逻辑的使用，可以令其他人更容易理解和使用您的 HTML。&lt;br/&gt;
+在未来，诸如 XML 阅读器之类的程序，也许需要阅读您的 HTML。
+使用格式良好的“近似 XHTML 的”语法，能够更智能。&lt;/p&gt;
+
+&lt;h5 id=&#34;注释&#34;&gt;注释：&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;请始终保持您的样式智能、整洁、纯净、格式良好。&lt;br/&gt;请使用正确的文档类型请始终在文档的首行声明文档类型：&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title> 前端提交数据的那些方式</title>
+      <link>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</link>
+      <pubDate>Fri, 18 May 2018 21:40:11 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E5%89%8D%E7%AB%AF%E6%8F%90%E4%BA%A4%E6%95%B0%E6%8D%AE%E7%9A%84%E9%82%A3%E4%BA%9B%E6%96%B9%E5%BC%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;声明：本篇文章转自&lt;a href=&#34;https://blog.csdn.net/dancen/article/details/37572101，&#34;&gt;https://blog.csdn.net/dancen/article/details/37572101，&lt;/a&gt;
+相比其他浅显的文章，这篇更让我收获颇多，
+另外，文章已略作修改，更易于自己理解
+文章待完善&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Http定义了与服务器交互的不同方法，最基本的方法有很多种，今天要说的分别是&lt;code&gt;GET&lt;/code&gt;，&lt;code&gt;POST&lt;/code&gt;，&lt;code&gt;PUT&lt;/code&gt;，&lt;code&gt;DELETE&lt;/code&gt;。&lt;br/&gt;
+另外，关于&lt;code&gt;URL&lt;/code&gt;：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Uniform Resource Location 全称是资源定位符 (暂时不做和URI的区分)&lt;/li&gt;
+&lt;li&gt;用于请求获取具体路径上的资源&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;HTTP中的&lt;code&gt;GET&lt;/code&gt;，&lt;code&gt;POST&lt;/code&gt;，&lt;code&gt;PUT&lt;/code&gt;，&lt;code&gt;DELETE&lt;/code&gt;，对应的资源操作是————查，改，增，删。&lt;br/&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;GET&lt;/code&gt;一般用于获取/查询资源信息，&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST&lt;/code&gt;一般用于更新资源信息。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title> 关于 Restful 接口的二三事</title>
+      <link>http://www.flysnow.org/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</link>
+      <pubDate>Fri, 18 May 2018 10:13:58 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E5%85%B3%E4%BA%8E-restful-%E6%8E%A5%E5%8F%A3%E7%9A%84%E4%BA%8C%E4%B8%89%E4%BA%8B/</guid>
+      <description>&lt;p&gt;互联网的发展是是迅速的，然而，这也就意味着，在纷繁复杂的环境下，前后端要想更加有效率的配合，免不了需要一种成熟的API设计理念，如：&lt;code&gt;RESTful&lt;/code&gt; API
+关于restful接口的设计，近期看了一些博文，在这里谈一下收获&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>算法基础———插入排序 </title>
+      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Mon, 07 May 2018 22:18:31 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/</guid>
+      <description>概念  在归并排序中，我们是用一种被称为分治法的通用模式，在分治法中，我们即将原问题分解为类似原问题的子问题，并递归的求解这些子问题，然后再归并这些子问题的解。  复杂度  时间复杂度 对于所有情况，它仅有一个O(nlgn) 空间复杂度O（n）  原址  非原址  js程序代码 bash function insertionSort(array) { console.time(&#39;插入排序耗时：&#39;); for (var i = 1; i &amp;lt; array.length; i++) { var key = array[i]; var j = i - 1; while ( array[j] &amp;gt; key) { array[j + 1] = array[j]; j--; } array[j + 1] = key; } console.timeEnd(&#39;插入排序耗时：&#39;); return array; } var arr=[3,44,38,5,47,15,36,26,27,2,46,4,19,50,48]; console.log(insertionSort(arr));  &amp;ndash;&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>算法基础———选择排序 </title>
+      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</link>
+      <pubDate>Sat, 05 May 2018 23:08:58 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;日积跬步，以期千里。
+《算法基础·打开算法之门》小札&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;概念&#34;&gt;概念&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;首先声明&lt;code&gt;array[i]&lt;/code&gt;是目前所看到的子数组中最小的元素，然后扫描数组的剩余部分，每当发现一个有一个元素小于当前最小的元素时，我们就更新最小元素的索引&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+    <item>
+      <title>算法基础之二分查找 </title>
+      <link>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</link>
+      <pubDate>Fri, 04 May 2018 21:24:14 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/05/%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;最近在看《算法基础·打开算法之门》（毕竟程序猿的算法不能太差&amp;hellip;）
+人总是健忘的，所以我决定将我收获的东西记录下来
+那么，首先，就是你了，最基础的二分查找！&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;关于二分查找-可以拥有如下叙述&#34;&gt;关于二分查找，可以拥有如下叙述:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;任意情况下，我们仅仅考虑某个子数组，也就是说，介于某两个索引之间的部分数组，将这两个索引依次记为p和r。初始时，p=1,r=n，因此开始时，子数组为整个完整数组，我们反复地将数组规模减半，直到一下任意一种情况发生：要么找到了要查找的元素，要么当前子数组为空（p&amp;gt;r）。&lt;/li&gt;
+&lt;li&gt;反复对子数组执行减半操作需要的时间花费是&lt;code&gt;O(lgn)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决输入框长度maxLength的兼容性问题</title>
+      <link>http://www.flysnow.org/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 11 Apr 2018 20:18:30 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/04/%E8%A7%A3%E5%86%B3%E8%BE%93%E5%85%A5%E6%A1%86%E9%95%BF%E5%BA%A6maxlength%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;最近在忙着做些东西，差点荒废了我的博客，随便写点什么吧&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在input标签中，只需要设置maxlength=”***”即可，但是在textarea标签中，IE9及IE9以下浏览器是不支持的，IE10、IE11则支持，估计后续的版本应该都会支持&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>改变浏览器位置</title>
+      <link>http://www.flysnow.org/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</link>
+      <pubDate>Tue, 20 Mar 2018 21:45:40 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/03/%E6%94%B9%E5%8F%98%E6%B5%8F%E8%A7%88%E5%99%A8%E4%BD%8D%E7%BD%AE/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;实际上，就是改变浏览器的url，so，有哪些方法呢？&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    1) location.assign(&amp;quot;http://www.wrox.com&amp;quot;)
+    2) window.location = &amp;quot;http://www.wrox.com&amp;quot;
+    3) location.href = &amp;quot;http://www.wrox.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然，2）、3）其实都是调用了assign()方法的，只不过是形式不一样而已，&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>找到数组的最值 </title>
+      <link>http://www.flysnow.org/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</link>
+      <pubDate>Thu, 15 Mar 2018 22:20:42 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/03/%E6%89%BE%E5%88%B0%E6%95%B0%E7%BB%84%E7%9A%84%E6%9C%80%E5%80%BC/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;在一个数组中找到最值，书中给了我们这样的一个方法（以最大值为例）：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;        var Values = [1,2,3];
+        var max = Math.max.apply(Math,Values);
+        var max = Math.max.apply(null,Values);
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>charAt与 indexOf与lastIndexOf </title>
+      <link>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</link>
+      <pubDate>Tue, 13 Mar 2018 22:12:38 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/03/charat%E4%B8%8E-indexof%E4%B8%8Elastindexof/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;吾日三省吾身，读《javascript高级程序设计（第三版）》随笔。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;##### 访问字符串中特定字符的方法是：&lt;code&gt;charAt()&lt;/code&gt; &amp;amp; &lt;code&gt;charCodeAt()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于 ‘ &#43; ’ 与 new Date</title>
+      <link>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</link>
+      <pubDate>Fri, 09 Mar 2018 21:35:49 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8E-&#43;-%E4%B8%8E-new-date/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;在读《javascript高级程序设计（第三版）》时，遇到的一行代码
+&lt;code&gt;var start = +new Date()&lt;/code&gt;;
+那么，&lt;code&gt;+new Date()&lt;/code&gt;是什么意思？虽然大概有些猜测,但，我还是决定查一查。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Javascript中可以在某个元素前使用&lt;code&gt;+&lt;/code&gt;号,
+这个操作是将该元素转换成&lt;code&gt;Number&lt;/code&gt;类型，如果转换失败，会得到&lt;code&gt;NAN&lt;/code&gt;.
+&lt;strong&gt;注&lt;/strong&gt;：&lt;em&gt;（适当的使用 运算符 可以简化 Number类型的转化过程）&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于ajax，大概需要了解哪些基础性的东西？</title>
+      <link>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</link>
+      <pubDate>Sat, 03 Mar 2018 21:43:07 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/03/%E5%85%B3%E4%BA%8Eajax%E5%A4%A7%E6%A6%82%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E5%93%AA%E4%BA%9B%E5%9F%BA%E7%A1%80%E6%80%A7%E7%9A%84%E4%B8%9C%E8%A5%BF/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;人总是健忘的，那么为什么不多动动手呢？比如说把知识记下来。
+我们总会或有或无的接触ajax技术，那么作为一名学习者，就有必要了解相关的知识&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;ajax-客户端与服务器端异步的通信的技术-原理&#34;&gt;ajax(客户端与服务器端异步的通信的技术)原理:&lt;/h3&gt;
+
+&lt;p&gt;相当于在用户和服务器之间加了—个中间层(AJAX引擎),
+通过创建一个XmlHttpRequest对象来向服务器发异步请求,
+通过回调在回调函数里进行dom操作.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>对CommonJS规范的一些理解</title>
+      <link>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</link>
+      <pubDate>Wed, 28 Feb 2018 19:03:21 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/02/%E5%AF%B9commonjs%E8%A7%84%E8%8C%83%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;咸鱼了一个寒假，不能再这样了。。。
+学海无涯啊0.0&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;概述&#34;&gt;概述&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Node 应用由模块组成，采用 CommonJS 模块规范。每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;        example.js
+        var x = 5;
+        var addX = function (value) {
+        return value + x;
+        };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面代码中，变量x和函数addX，是当前文件example.js私有的，其他文件不可见。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果想在多个文件分享变量，必须定义为global对象的属性。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;    global.warning = true;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上面代码的warning变量，可以被所有文件读取。当然，这样写法是不推荐的。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于object.key与object[key]的区别</title>
+      <link>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
+      <pubDate>Wed, 24 Jan 2018 15:01:27 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/%E5%85%B3%E4%BA%8Eobject-key%E4%B8%8Eobject-key-%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
+      <description>  记录所需要的，摒弃多余的。 本篇文章是对segmentfault的一个问答的总结。
+ obeject.key与object[key]有什么区别? 有什么区别，不试试怎么知道？
+测试代码（其实有很多栗子，随便举一个） var obj = { name: &#39;tom&#39;, age: 22 }, someKey = &#39;age&#39;; console.log(obj.name); console.log(obj[&#39;name&#39;]); console.log(obj.someKey); console.log(obj[someKey]);  测试结果： （放图） 通常来讲， obj[&amp;ldquo;key&amp;rdquo;] 与 obj.key 的作用差不多，但是，  如果key不确定（key是变量）的情况下， 或者key的写法比较特殊（比如包含空格什么的）  则只能通过obj[ ]的方式去访问 </description>
+    </item>
+    
+    <item>
+      <title>Markdown常用语法</title>
+      <link>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Mon, 22 Jan 2018 20:49:29 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;写博客，自然免不了接触&lt;strong&gt;Markdown&lt;/strong&gt;,作为初学者，为了即用即查，我决定把相关命令记录下来，本文就是边学边写
+此处声明：本文是 &lt;strong&gt;参考他人的文章&lt;/strong&gt;&amp;amp;&lt;strong&gt;结合实践&lt;/strong&gt;后，所写，另外，转载、复制随意，但请务必&lt;strong&gt;注明本文链接&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&#34;标题&#34;&gt;标题：&lt;/h1&gt;
+
+&lt;p&gt;写法:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# h1级标题
+## h2级标题
+### h3级标题
+#### h4级标题
+##### h5级标题
+###### h6级标题
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;栗子：
+- #### 这是一个h4级标题&lt;/p&gt;
+
+&lt;p&gt;注意：
+   - &lt;code&gt;#&lt;/code&gt;与标题文字间要有&lt;strong&gt;空格&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;当-与-结合使用时-如果不想下一行受到干扰-可以使用-kbd-enter-kbd-换行&#34;&gt;- 当&lt;code&gt;-&lt;/code&gt;与&lt;code&gt;#&lt;/code&gt;结合使用时，如果不想下一行受到干扰，可以使用&lt;kbd&gt;Enter&lt;/kbd&gt;换行&lt;/h2&gt;</description>
+    </item>
+    
+    <item>
+      <title>原生JS实现jQuery的addClass, removeClass, hasClass函数功能</title>
+      <link>http://www.flysnow.org/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</link>
+      <pubDate>Sat, 20 Jan 2018 23:21:08 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/%E5%8E%9F%E7%94%9Fjs%E5%AE%9E%E7%8E%B0jquery%E7%9A%84addclass-removeclass-hasclass%E5%87%BD%E6%95%B0%E5%8A%9F%E8%83%BD/</guid>
+      <description>&lt;h4 id=&#34;1-addclass&#34;&gt;- [1] addClass&lt;/h4&gt;
+
+&lt;hr /&gt;
+
+&lt;pre&gt;&lt;code&gt;function addClass(obj, cls){
+    var obj_class = obj.className;//获取 class 内容.
+    var blank = (obj_class != &#39;&#39;) ? &#39; &#39; : &#39;&#39;;//判断获取到的 class 是否为空, 如果不为空在前面加个&#39;空格&#39;.
+    var added = obj_class + blank + cls;//组合原来的 class 和需要添加的 class.
+    obj.className = added;//替换原来的 class.
+}
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>css解决背景透明的兼容性问题</title>
+      <link>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 19 Jan 2018 09:33:33 +0800</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/01/css%E8%A7%A3%E5%86%B3%E8%83%8C%E6%99%AF%E9%80%8F%E6%98%8E%E7%9A%84%E5%85%BC%E5%AE%B9%E6%80%A7%E9%97%AE%E9%A2%98/</guid>
+      <description>&lt;h3 id=&#34;全浏览器兼容背景半透明的问题的么几个解决方案&#34;&gt;全浏览器兼容背景半透明的问题的么几个解决方案：&lt;/h3&gt;
+
+&lt;h5 id=&#34;1-使用半透明png图片平铺&#34;&gt;1.使用半透明png图片平铺&lt;/h5&gt;
+
+&lt;h5 id=&#34;2-使用opcacity属性&#34;&gt;2.使用opcacity属性&lt;/h5&gt;
+
+&lt;h5 id=&#34;3-使用rgba和ie的opacity滤镜属性结合&#34;&gt;3.使用rgba和IE的opacity滤镜属性结合&lt;/h5&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>http://www.flysnow.org/post/2018/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.flysnow.org/post/2018/hello-world/</guid>
+      <description>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick Start Create a new post $ hexo new &amp;quot;My New Post&amp;quot;  More info: Writing
+Run server $ hexo server  More info: Server
+Generate static files $ hexo generate  More info: Generating</description>
+    </item>
+    
+  </channel>
+</rss>
